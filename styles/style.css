@@ -1,3 +1,29 @@
-.header {
+@import './fonts/inter/inter.css';
+.root {
   margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.header__list-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.header__list-links:nth-child(2) {
+  margin: 0 34px;
+}
+
+.header__link {
+  color: red;
+  font-family: Inter;
+}
+
+.header__link:nth-child(2) {
+  margin: 0 34px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+.header__link {
+    color: $Color;
+    font-family: $fontfamily;
+}
+
+.header__link:nth-child(2) {
+    margin: 0 34px;
+}
