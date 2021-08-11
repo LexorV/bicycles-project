@@ -1,29 +1,111 @@
 @import './fonts/inter/inter.css';
 .root {
-  margin: 0;
+  margin: auto;
   padding: 0;
+  max-width: 1440px;
 }
 
 .header {
   margin-left: 120px;
   margin-right: 120px;
+  padding: 28px 0;
 }
 
 .header__list-links {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-}
-
-.header__list-links:nth-child(2) {
-  margin: 0 34px;
+  margin: 0;
 }
 
 .header__link {
-  color: red;
+  color: #151515;
   font-family: Inter;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .header__link:nth-child(2) {
   margin: 0 34px;
+}
+
+.header__link:hover {
+  opacity: 0.75;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-family: Inter;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #151515;
+}
+
+.subtitle {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+  opacity: 0.7;
+}
+
+.intro {
+  display: flex;
+  padding-left: 120px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.intro__detail-button {
+  max-width: 180px;
+  min-height: 50px;
+  color: white;
+  background-color: #24B47E;
+  border-radius: 4px;
+  border: none;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 167px;
+}
+
+.intro__picture {
+  max-width: 610px;
+  max-height: 836px;
+}
+
+.intro__text-bike {
+  margin-right: 30px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.intro__text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}
+
+.intro__container-line {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.intro__line {
+  width: 132px;
+  height: 2px;
+  background-color: #D7D4D4;
+  border: none;
+  align-self: center;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

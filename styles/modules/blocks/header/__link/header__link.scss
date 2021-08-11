@@ -1,8 +1,16 @@
 .header__link {
-    color: $Color;
-    font-family: $fontfamily;
+    color: $colorText;
+    font-family: $fontMain;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .header__link:nth-child(2) {
     margin: 0 34px;
+}
+
+.header__link:hover {
+    opacity: $opacityLink;
 }
