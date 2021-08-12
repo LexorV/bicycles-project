@@ -1,0 +1,13 @@
+.bicycles__card-text {
+    font-family: $fontMain;
+    font-weight: 600;
+    color: $colorText;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 22px 0 0 20px;
+    text-decoration: none;
+}
+
+.bicycles__card-text:hover {
+    opacity: $opacityLink;
+}
