@@ -152,4 +152,48 @@
 .ride__picture {
   min-width: 650px;
   max-height: 460px;
+}
+
+.type-bike {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.type-bike__button {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #EBEBEB;
+  cursor: pointer;
+  padding: 0;
+}
+
+.type-bike__button:first-of-type {
+  margin-right: 20px;
+}
+
+.type-bike__container-picture {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.type-bike__form-icon {
+  background-image: url("/images/icon/pulse-background.svg");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 12px;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  bottom: 16px;
+}
+
+.type-bike__picture {
+  max-width: 650px;
 }/*# sourceMappingURL=style.css.map */
