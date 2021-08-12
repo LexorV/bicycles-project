@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import './fonts/inter/inter.css';
 .root {
   margin: auto;
@@ -300,4 +301,83 @@
   margin-top: 60px;
   max-width: 580px;
   max-height: 460px;
+}
+
+.footer {
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 80px;
+}
+
+.footer__copyright {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #CFCFCF;
+}
+
+.footer__form {
+  margin-bottom: 100px;
+  min-width: 360px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  box-sizing: border-box;
+  padding: 11px 0 11px 20px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+}
+
+.footer__range-container {
+  position: relative;
+}
+
+.footer__title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #151515;
+  max-width: 229px;
+  margin-bottom: 50px;
+}
+
+.footer__swith-button {
+  width: 44px;
+  /* ширина переключателя */
+  height: 24px;
+  /* высота переключателя */
+  border-radius: 12px;
+  /* радиус скругления */
+  background: #FFFFFF;
+  /* цвет фона */
+  z-index: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+  /* анимация */
+}
+
+.footer__swith-button::after {
+  content: "";
+  height: 20px;
+  /* высота кнопки */
+  width: 20px;
+  /* ширина кнопки */
+  border-radius: 18px;
+  /* радиус кнопки */
+  background: #24B47E;
+  /* цвет кнопки */
+  top: 2px;
+  /* положение кнопки по вертикали относительно основы */
+  left: 3px;
+  /* положение кнопки по горизонтали относительно основы */
+  transition-duration: 300ms;
+  /* анимация */
+  position: absolute;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

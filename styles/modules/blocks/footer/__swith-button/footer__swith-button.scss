@@ -1,0 +1,36 @@
+.footer__swith-button {
+    width: 44px;
+    /* ширина переключателя */
+    height: 24px;
+    /* высота переключателя */
+    border-radius: 12px;
+    /* радиус скругления */
+    background: #FFFFFF;
+    /* цвет фона */
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+    /* анимация */
+}
+
+.footer__swith-button::after {
+    content: "";
+    height: 20px;
+    /* высота кнопки */
+    width: 20px;
+    /* ширина кнопки */
+    border-radius: 18px;
+    /* радиус кнопки */
+    background: #24B47E;
+    /* цвет кнопки */
+    top: 2px;
+    /* положение кнопки по вертикали относительно основы */
+    left: 3px;
+    /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms;
+    /* анимация */
+    position: absolute;
+    z-index: 1;
+}
