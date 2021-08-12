@@ -266,4 +266,38 @@
   margin: 0;
   gap: 40px;
   margin-top: 92px;
+}
+
+.training {
+  display: flex;
+  padding-top: 90px;
+  gap: 160px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 120px;
+}
+
+.training__link {
+  color: #151515;
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.training__link:hover {
+  opacity: 0.6;
+}
+
+.training__links {
+  margin-top: 182px;
+  display: flex;
+  gap: 30px;
+}
+
+.training__picture {
+  margin-top: 60px;
+  max-width: 580px;
+  max-height: 460px;
 }/*# sourceMappingURL=style.css.map */

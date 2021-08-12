@@ -1,0 +1,7 @@
+.training {
+    display: flex;
+    padding-top: 90px;
+    gap: 160px;
+    @include field;
+    padding-bottom: 120px;
+}
