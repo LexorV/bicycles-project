@@ -5,6 +5,18 @@
   padding: 0;
   max-width: 1440px;
   background-color: #F4F4F4;
+  color: #151515;
+}
+.root a {
+  color: #151515;
+}
+
+.root__theme_dark {
+  background-color: #2F2F2F;
+  color: white;
+}
+.root__theme_dark a {
+  color: white;
 }
 
 .header {
@@ -21,7 +33,6 @@
 }
 
 .header__link {
-  color: #151515;
   font-family: Inter;
   text-decoration: none;
   font-size: 14px;
@@ -44,13 +55,11 @@
   font-size: 55px;
   font-weight: 700;
   line-height: 60px;
-  color: #151515;
 }
 
 .subtitle {
   font-size: 18px;
   line-height: 28px;
-  color: black;
   opacity: 0.7;
   font-family: Inter;
   font-weight: 400;
@@ -142,7 +151,6 @@
   min-height: 430px;
   top: 347px;
   right: 0;
-  border-radius: 20px;
 }
 
 .intro__siticky-picture {
@@ -160,7 +168,6 @@
 }
 
 .ride__busy {
-  color: black;
   opacity: 0.7;
   font-family: Inter;
   font-weight: 400;
@@ -170,7 +177,6 @@
 }
 
 .ride__name {
-  color: #151515;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
@@ -180,7 +186,6 @@
 .ride__title {
   margin: 0;
   font-family: Inter;
-  color: #151515;
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
@@ -254,12 +259,14 @@
   max-width: 340px;
   min-height: 340px;
   align-self: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #F4F4F4;
 }
 
 .bicycles__card-text {
   font-family: Inter;
   font-weight: 600;
-  color: #151515;
   font-size: 18px;
   line-height: 22px;
   margin: 22px 0 0 20px;
@@ -287,7 +294,6 @@
 }
 
 .bicycles__type-link {
-  color: #151515;
   text-decoration: none;
   font-family: Inter;
   opacity: 0.7;
@@ -318,7 +324,6 @@
 }
 
 .training__link {
-  color: #151515;
   text-decoration: none;
   font-family: Inter;
   font-weight: 600;
@@ -413,7 +418,6 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #151515;
   max-width: 229px;
   margin-bottom: 50px;
 }
