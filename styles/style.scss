@@ -18,6 +18,8 @@
 @import './modules/blocks/intro/__text-container/intro__text-container.scss';
 @import './modules/blocks/intro/__container-line/intro__container-line.scss';
 @import './modules/blocks/intro/__line/intro__line.scss';
+@import './modules/blocks/intro/__block-sticky/intro__block-sticky.scss';
+@import './modules/blocks/intro/__siticky-picture/intro__siticky-picture.scss';
 //ride 
 @import './modules/blocks/ride/ride.scss';
 @import './modules/blocks/ride/__busy/ride__busy.scss';
@@ -60,3 +62,4 @@
 @import './modules/blocks/footer/__title/footer__title.scss';
 @import './modules/blocks/footer/__swith-button/footer__swith-button.scss';
 @import './modules/blocks/footer/__swith-button/__swith-button_active/footer__swith-button_active.scss';
+@import './modules/blocks/footer/__btn-inform/footer__btn-inform.scss';

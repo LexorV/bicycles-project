@@ -1,0 +1,8 @@
+.footer__swith-button_active {
+    background: #545454;
+    ;
+}
+
+.footer__swith-button_active::after {
+    left: 22px;
+}
