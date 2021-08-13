@@ -6,6 +6,7 @@
   max-width: 1440px;
   background-color: #F4F4F4;
   color: #151515;
+  transition: background 1s ease;
 }
 .root a {
   color: #151515;
@@ -16,6 +17,16 @@
   color: white;
 }
 .root__theme_dark a {
+  color: white;
+}
+.root__theme_dark input {
+  background-color: #2F2F2F;
+  caret-color: white;
+}
+.root__theme_dark input::placeholder {
+  color: white;
+}
+.root__theme_dark button {
   color: white;
 }
 

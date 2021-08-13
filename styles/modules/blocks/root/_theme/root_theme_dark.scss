@@ -4,4 +4,14 @@
     a {
         color: white;
     }
+    input {
+        background-color: #2F2F2F;
+        caret-color: white;
+    }
+    input::placeholder {
+        color: white;
+    }
+    button {
+        color: white;
+    }
 }
