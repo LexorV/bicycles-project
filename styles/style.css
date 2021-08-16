@@ -225,6 +225,7 @@
   background-color: #EBEBEB;
   cursor: pointer;
   padding: 0;
+  opacity: 0.6;
 }
 
 .type-bike__button:first-of-type {
@@ -253,6 +254,10 @@
 
 .type-bike__picture {
   max-width: 650px;
+}
+
+.type-bike__button_active {
+  opacity: 1;
 }
 
 .bicycles {
@@ -311,6 +316,9 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .bicycles__type-link:hover {
@@ -323,6 +331,14 @@
   margin: 0;
   gap: 40px;
   margin-top: 92px;
+}
+
+.bicycles__type-link_active {
+  opacity: 1;
+}
+
+.bicycles__type-link_active:hover {
+  opacity: 0.75;
 }
 
 .training {
