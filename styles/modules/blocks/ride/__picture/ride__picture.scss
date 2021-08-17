@@ -1,4 +1,4 @@
 .ride__picture {
-    min-width: 650px;
+    @include pictureSizeChange;
     max-height: 460px;
 }

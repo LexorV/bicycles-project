@@ -1,7 +1,7 @@
 .intro {
     display: flex;
     justify-content: space-between;
-    padding-left: 120px;
+    @include field2;
     box-sizing: border-box;
     padding-top: 20px;
     position: relative;

@@ -6,3 +6,11 @@
     top: 347px;
     right: 0;
 }
+
+@media screen and (max-width: $desktMinopeSize) {
+    .intro__block-sticky {
+        min-width: 660px;
+        min-height: 300px;
+        top: 450px;
+    }
+}

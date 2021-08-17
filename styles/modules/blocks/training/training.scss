@@ -5,3 +5,10 @@
     @include field;
     padding-bottom: 120px;
 }
+
+@media screen and (max-width: $desktMinopeSize) {
+    .training {
+        gap: 0;
+        justify-content: space-between;
+    }
+}

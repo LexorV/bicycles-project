@@ -5,3 +5,10 @@
     background-color: #F4F4F4;
     border-radius: 20px;
 }
+
+@media screen and (max-width: $desktMinopeSize) {
+    .intro__siticky-picture {
+        max-width: 180px;
+        padding: 10px 27px 10px 27px;
+    }
+}

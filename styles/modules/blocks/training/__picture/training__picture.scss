@@ -1,5 +1,12 @@
-.training__picture {
-    margin-top: 60px;
-    max-width: 580px;
-    max-height: 460px;
-}
+        .training__picture {
+            margin-top: 60px;
+            max-width: 580px;
+            max-height: 460px;
+        }
+        
+        @media screen and (max-width: $desktMinopeSize) {
+            .training__picture {
+                max-width: 480px;
+                max-height: 400px;
+            }
+        }

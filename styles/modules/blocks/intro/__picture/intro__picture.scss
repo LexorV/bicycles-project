@@ -3,3 +3,10 @@
     max-height: 836px;
     margin: 0;
 }
+
+@media screen and (max-width: $desktMinopeSize) {
+    .intro__picture {
+        max-width: 550px;
+        max-height: 776px;
+    }
+}
