@@ -29,6 +29,12 @@
 .root__theme_dark button {
   color: white;
 }
+.root__theme_dark .type-bike__button {
+  background-color: #434343;
+}
+.root__theme_dark .type-bike__arrow {
+  filter: invert(1);
+}
 
 .header {
   margin-left: 120px;
