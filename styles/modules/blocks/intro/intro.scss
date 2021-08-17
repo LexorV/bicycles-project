@@ -1,8 +1,21 @@
 .intro {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     @include field2;
     box-sizing: border-box;
     padding-top: 20px;
     position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+     "title  picture"
+    "text  picture";
 }
+@media screen and (max-width: $tabletSizeB) {
+    .intro {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+     "title "
+    "picture"
+    "text";
+    justify-content: center;
+}
+    }

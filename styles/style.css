@@ -90,9 +90,11 @@
   font-size: 55px;
   font-weight: 700;
   line-height: 60px;
+  max-width: 460px;
 }
 
 .subtitle {
+  margin: 0;
   font-size: 18px;
   line-height: 28px;
   opacity: 0.7;
@@ -103,12 +105,13 @@
 }
 
 .intro {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   margin-left: 120px;
   box-sizing: border-box;
   padding-top: 20px;
   position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title  picture" "text  picture";
 }
 @media screen and (max-width: 1280px) {
   .intro {
@@ -126,6 +129,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .intro {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title " "picture" "text";
+    justify-content: center;
+  }
+}
 @keyframes loadingColor {
   0% {
     background: linear-gradient(90deg, #319e75 0%, #24b47e 0%);
@@ -164,6 +174,8 @@
   max-width: 610px;
   max-height: 836px;
   margin: 0;
+  grid-area: picture;
+  margin-left: 60px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -184,6 +196,7 @@
   display: flex;
   flex-direction: column;
   max-width: 460px;
+  grid-area: text;
 }
 
 .intro__container-line {
@@ -230,6 +243,12 @@
     padding: 10px 27px 10px 27px;
   }
 }
+.intro__title-container {
+  grid-area: title;
+  display: flex;
+  align-self: flex-end;
+}
+
 .ride {
   display: flex;
   padding: 120px 0px 60px 0px;
