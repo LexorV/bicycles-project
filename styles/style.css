@@ -174,7 +174,6 @@
   max-width: 610px;
   max-height: 836px;
   margin: 0;
-  grid-area: picture;
   margin-left: 60px;
 }
 
@@ -196,7 +195,6 @@
   display: flex;
   flex-direction: column;
   max-width: 460px;
-  grid-area: text;
 }
 
 .intro__container-line {
@@ -204,6 +202,11 @@
   justify-content: flex-start;
 }
 
+@media screen and (max-width: 1024px) {
+  .intro__container-line {
+    display: none;
+  }
+}
 .intro__line {
   width: 132px;
   height: 2px;
@@ -229,6 +232,12 @@
     top: 450px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .intro__block-sticky {
+    top: 700px;
+    min-width: 460px;
+  }
+}
 .intro__siticky-picture {
   position: sticky;
   top: 0;
@@ -243,12 +252,37 @@
     padding: 10px 27px 10px 27px;
   }
 }
-.intro__title-container {
+.intro__title-box {
   grid-area: title;
   display: flex;
-  align-self: flex-end;
 }
 
+@media screen and (max-width: 1024px) {
+  .intro__title-box {
+    justify-content: center;
+  }
+}
+.intro__picture-box {
+  grid-area: picture;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro__picture-box {
+    justify-content: center;
+  }
+}
+.intro__text-box {
+  grid-area: text;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro__text-box {
+    justify-content: center;
+    padding-top: 40px;
+  }
+}
 .ride {
   display: flex;
   padding: 120px 0px 60px 0px;
@@ -274,6 +308,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .ride {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .ride__busy {
   opacity: 0.7;
   font-family: Inter;
@@ -290,18 +330,32 @@
   margin: 262px 0 5px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .ride__name {
+    margin: 40px 0 4px 0;
+  }
+}
 .ride__title {
   margin: 0;
   font-family: Inter;
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
+  max-width: 470px;
 }
 
 .ride__container-text {
   padding-left: 80px;
 }
 
+@media screen and (max-width: 1024px) {
+  .ride__container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
 .ride__picture {
   max-width: 650px;
   max-height: 460px;
@@ -322,6 +376,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .ride__picture {
+    margin-bottom: 40px;
+    align-self: center;
+  }
+}
 .type-bike {
   margin-left: 120px;
 }

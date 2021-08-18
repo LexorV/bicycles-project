@@ -14,3 +14,9 @@
         top: 450px;
     }
 }
+@media screen and (max-width: $tabletSizeB) {
+    .intro__block-sticky{
+        top: 700px;
+        min-width: 460px;
+    }
+}

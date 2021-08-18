@@ -1,11 +1,11 @@
-.ride {
+.intro__text-box {
+    grid-area: text;
     display: flex;
-    padding: 120px 0px 60px 0px;
-    @include field
 }
+
 @media screen and (max-width: $tabletSizeB) {
-    .ride{
-        flex-direction: column;
+    .intro__text-box {
         justify-content: center;
+        padding-top: 40px;
     }
 }

@@ -1,4 +1,11 @@
 .ride__picture {
     @include pictureSizeChange;
     max-height: 460px;
+  
+}
+@media screen and (max-width: $tabletSizeB) {
+    .ride__picture{
+        margin-bottom: 40px;
+        align-self: center;
+    }
 }

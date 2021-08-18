@@ -1,0 +1,10 @@
+.intro__picture-box {
+    grid-area: picture;
+    display: flex;
+}
+
+@media screen and (max-width: $tabletSizeB) {
+    .intro__picture-box {
+       justify-content: center;
+    }
+}

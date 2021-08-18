@@ -2,3 +2,8 @@
     display: flex;
     justify-content: flex-start;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .intro__container-line{
+      display: none;
+    }
+}
