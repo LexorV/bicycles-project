@@ -6,3 +6,8 @@
     margin-bottom: 50px;
     overflow: hidden;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__container-picture{
+     justify-content: center;
+    }
+}

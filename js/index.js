@@ -4,6 +4,7 @@ const nextSliderBtn = document.querySelector('#nextSliderBtn');
 const previousSliderBtn = document.querySelector('#previousSliderBtn');
 const bicyclesList = document.querySelector('.bicycles__type-list');
 const bicyclesType = document.querySelectorAll('.bicycles__type-link');
+const bicyclesSelect = document.querySelector('.bicycles__select');
 const arrayTypeBicycles = [{
         name: 'Шоссе',
         discription: 'На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.',
@@ -190,18 +191,29 @@ function addBike(dataArray, index) {
 }
 addBike(arrayTypeBicycles, 0);
 choiceTypeBicycles(0);
+let indexbicyclesType  = 0;
 
+bicyclesSelect.addEventListener('change', function(){
+    let indexType = bicyclesSelect.options.selectedIndex;
+    addBike(arrayTypeBicycles, indexType);
+    choiceTypeBicycles(indexType);
+    indexbicyclesType =  indexType;
+    return indexbicyclesType
+});
 
 
 bicyclesType[0].addEventListener('click', function() {
     choiceTypeBicycles(0);
     addBike(arrayTypeBicycles, 0);
+    bicyclesSelect.options.selectedIndex = 0;
 });
 bicyclesType[1].addEventListener('click', function() {
     choiceTypeBicycles(1);
     addBike(arrayTypeBicycles, 1);
+    bicyclesSelect.options.selectedIndex = 1;
 });
 bicyclesType[2].addEventListener('click', function() {
     choiceTypeBicycles(2);
     addBike(arrayTypeBicycles, 2);
+    bicyclesSelect.options.selectedIndex = 2;
 });
