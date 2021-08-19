@@ -41,6 +41,7 @@
 @import './modules/blocks/type-bike/__slide/type-bike__slide.scss';
 @import './modules/blocks/type-bike/__slider/type-bike__slider.scss';
 @import './modules/blocks/type-bike/__button/_active/type-bike__button_active.scss';
+@import './modules/blocks/type-bike/__arrow-container/type-bike__arrow-container.scss';
 //bicycles
 @import './modules/blocks/bicycles/bicycles.scss';
 @import './modules/blocks/bicycles/__block-top/bicycles__block-top.scss';
@@ -60,6 +61,9 @@
 @import './modules/blocks/training/__links/training__links.scss';
 @import './modules/blocks/training/__picture/training__picture.scss';
 @import './modules/blocks/training/__text-container/training__text-container.scss';
+@import './modules/blocks/training/__title-box/training__title-box.scss';
+@import './modules/blocks/training/__text-box/training__text-box.scss';
+@import './modules/blocks/training/__picture-box/training__picture-box.scss';
 //footer 
 @import './modules/blocks/footer/footer.scss';
 @import './modules/blocks/footer/__copyright/footer__copyright.scss';

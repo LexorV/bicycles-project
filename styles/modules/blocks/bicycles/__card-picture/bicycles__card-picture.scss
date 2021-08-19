@@ -13,3 +13,8 @@
         padding: 15px;
     }
 }
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__card-picture {
+        max-width: 320px;
+    }
+}

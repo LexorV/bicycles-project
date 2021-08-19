@@ -9,3 +9,9 @@
     position: absolute;
     bottom: 16px;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__form-icon {
+       bottom: 14px;
+       left: 0;
+    }
+}

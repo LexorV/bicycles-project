@@ -32,3 +32,8 @@
 .intro__detail-button:hover {
     animation: loadingColor 10s;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .intro__detail-button{
+        margin-bottom:0;
+    }
+}

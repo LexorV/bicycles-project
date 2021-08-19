@@ -47,11 +47,17 @@
             max-width: 450px;
         }
     }
-    @media screen and (max-width: $tabletSize) {
+    @media screen and (max-width: $tabletSizeB) {
         & {
-            max-width: 350px;
+            max-width: 550px;
         }
     }
+    @media screen and (max-width: $tabletSize) {
+        & {
+            max-width: 450px;
+        }
+    }
+    
     @media screen and (max-width: $mobileSize) {
         & {
             max-width: 284px;

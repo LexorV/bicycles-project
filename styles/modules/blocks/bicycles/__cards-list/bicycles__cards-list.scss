@@ -12,3 +12,10 @@
         gap: 10px;
     }
 }
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__cards-list  {
+       overflow: hidden;
+       max-width: 360px;
+       margin-left: 200px;
+    }
+}

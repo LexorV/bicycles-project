@@ -4,3 +4,8 @@
     list-style-type: none;
     margin: 0;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .header__list-links {
+        justify-content: center;
+    }
+}

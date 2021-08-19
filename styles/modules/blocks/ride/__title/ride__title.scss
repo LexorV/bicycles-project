@@ -6,3 +6,8 @@
     line-height: 44px;
     max-width: 470px;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .ride__title{
+    align-self: center;
+    }
+}

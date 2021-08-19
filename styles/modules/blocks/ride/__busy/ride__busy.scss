@@ -3,3 +3,8 @@
     font-size: 16px;
     margin: 0;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .ride__busy{
+      align-self: center;
+    }
+}

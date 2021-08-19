@@ -7,4 +7,11 @@
     border-color: #E3E3E3;
     box-sizing: border-box;
     padding-left: 12px;
+    display: none;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__select{
+       display: flex;
+
+    }
 }

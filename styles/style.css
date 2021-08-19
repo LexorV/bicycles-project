@@ -67,6 +67,11 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__list-links {
+    justify-content: center;
+  }
+}
 .header__link {
   font-family: Inter;
   text-decoration: none;
@@ -170,6 +175,11 @@
   animation: loadingColor 10s;
 }
 
+@media screen and (max-width: 1024px) {
+  .intro__detail-button {
+    margin-bottom: 0;
+  }
+}
 .intro__picture {
   max-width: 610px;
   max-height: 836px;
@@ -312,6 +322,7 @@
   .ride {
     flex-direction: column;
     justify-content: center;
+    padding-top: 100px;
   }
 }
 .ride__busy {
@@ -323,6 +334,11 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .ride__busy {
+    align-self: center;
+  }
+}
 .ride__name {
   font-weight: 500;
   font-size: 20px;
@@ -333,6 +349,7 @@
 @media screen and (max-width: 1024px) {
   .ride__name {
     margin: 40px 0 4px 0;
+    align-self: center;
   }
 }
 .ride__title {
@@ -344,6 +361,11 @@
   max-width: 470px;
 }
 
+@media screen and (max-width: 1024px) {
+  .ride__title {
+    align-self: center;
+  }
+}
 .ride__container-text {
   padding-left: 80px;
 }
@@ -365,9 +387,14 @@
     max-width: 450px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .ride__picture {
+    max-width: 550px;
+  }
+}
 @media screen and (max-width: 720px) {
   .ride__picture {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -443,6 +470,12 @@
   bottom: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  .type-bike__form-icon {
+    bottom: 14px;
+    left: 0;
+  }
+}
 .type-bike__picture {
   max-width: 650px;
 }
@@ -451,9 +484,14 @@
     max-width: 450px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .type-bike__picture {
+    max-width: 550px;
+  }
+}
 @media screen and (max-width: 720px) {
   .type-bike__picture {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -467,8 +505,20 @@
     display: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  .type-bike__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .type-bike__button_active {
   opacity: 1;
+}
+
+.type-bike__arrow-container {
+  display: flex;
+  justify-content: center;
 }
 
 .bicycles {
@@ -500,6 +550,12 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1024px) {
+  .bicycles__block-top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .bicycles__card-picture {
   max-width: 320px;
   max-height: 340px;
@@ -513,6 +569,11 @@
   .bicycles__card-picture {
     max-width: 254px;
     padding: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bicycles__card-picture {
+    max-width: 320px;
   }
 }
 .bicycles__card-text {
@@ -549,6 +610,13 @@
     gap: 10px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .bicycles__cards-list {
+    overflow: hidden;
+    max-width: 360px;
+    margin-left: 200px;
+  }
+}
 .bicycles__type-link {
   text-decoration: none;
   font-family: Inter;
@@ -573,6 +641,11 @@
   margin-top: 92px;
 }
 
+@media screen and (max-width: 1024px) {
+  .bicycles__type-lists {
+    display: none;
+  }
+}
 .bicycles__type-link_active {
   opacity: 1;
 }
@@ -590,15 +663,23 @@
   border-color: #E3E3E3;
   box-sizing: border-box;
   padding-left: 12px;
+  display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .bicycles__select {
+    display: flex;
+  }
+}
 .training {
-  display: flex;
+  display: grid;
   padding-top: 90px;
   gap: 160px;
   margin-left: 120px;
   margin-right: 120px;
   padding-bottom: 120px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title  picture" "text  picture";
 }
 @media screen and (max-width: 1280px) {
   .training {
@@ -623,6 +704,13 @@
   .training {
     gap: 0;
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .training {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title " "picture" "text";
+    justify-content: center;
   }
 }
 .training__link {
@@ -655,6 +743,24 @@
     max-height: 400px;
   }
 }
+.training__title-box {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+}
+
+.training__text-box {
+  grid-area: text;
+  display: flex;
+  justify-content: center;
+}
+
+.training__picture-box {
+  grid-area: picture;
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   margin-left: 120px;
   margin-right: 120px;
@@ -681,6 +787,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__copyright {
   font-family: Inter;
   font-weight: 600;
