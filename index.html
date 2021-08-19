@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дорожный клуб</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./vendor/splide-2.4.21/dist/css/splide.min.css">
+    <script src="./vendor/splide-2.4.21/dist/js/splide.min.js"></script>
 </head>
 
 <body class="root">
@@ -91,20 +93,24 @@
                     <li class="bicycles__type-list"><button class="bicycles__type-link">TT</button></li>
                 </ul>
             </div>
-            <ul class="bicycles__cards-list">
-                <li class="bicycles__card">
+            <div id="bicycleSplide" class="splide">
+                <div class="splide__track">
+            <ul class="bicycles__cards-list splide__list">
+                <li class="bicycles__card splide__slide">
                     <img class="bicycles__card-picture " src="">
                     <a href="#" class="bicycles__card-text"></a>
                 </li>
-                <li class="bicycles__card">
+                <li class="bicycles__card splide__slide">
                     <img class="bicycles__card-picture" src="">
                     <a href="#" class="bicycles__card-text"></a>
                 </li>
-                <li class="bicycles__card">
+                <li class="bicycles__card splide__slide">
                     <img class="bicycles__card-picture" src="">
                     <a href="#" class="bicycles__card-text"></a>
                 </li>
             </ul>
+        </div>
+        </div>
         </section>
         <section class="training">
             <div class="training__title-box">

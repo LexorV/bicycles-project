@@ -4,3 +4,9 @@
     right: 0;
     display: flex;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .footer__range-container{
+      position: relative;
+      bottom: 100px;
+    }
+}

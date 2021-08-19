@@ -217,3 +217,21 @@ bicyclesType[2].addEventListener('click', function() {
     addBike(arrayTypeBicycles, 2);
     bicyclesSelect.options.selectedIndex = 2;
 });
+	document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide', {
+            classes: {
+                pagination: 'splide__pagination bicycles__dots-list',
+                page: 'splide__pagination__page bicycles__dots-btn',
+            },
+            padding:{
+                left:0,
+            },
+            arrows:false,
+            perPage: 3,
+            breakpoints: {
+                 1024: { 
+                    perPage:1,
+                },
+            }
+        } ).mount();
+	} );

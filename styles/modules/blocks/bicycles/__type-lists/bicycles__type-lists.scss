@@ -5,6 +5,10 @@
     gap: 40px;
     margin-top: 92px;
 }
+@media screen and (max-width: 1439px) {
+    .bicycles__type-lists  {
+    margin-right: 120px;}
+}
 @media screen and (max-width: $tabletSizeB) {
     .bicycles__type-lists {
        display: none;

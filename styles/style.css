@@ -518,9 +518,13 @@
 
 .type-bike__arrow-container {
   display: flex;
-  justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .type-bike__arrow-container {
+    justify-content: center;
+  }
+}
 .bicycles {
   margin-left: 120px;
   margin-right: 120px;
@@ -544,6 +548,11 @@
   }
 }
 
+@media screen and (max-width: 1439px) {
+  .bicycles {
+    margin-right: 10px;
+  }
+}
 .bicycles__block-top {
   padding-top: 60px;
   display: flex;
@@ -559,7 +568,6 @@
 .bicycles__card-picture {
   max-width: 320px;
   max-height: 340px;
-  align-self: center;
   padding: 20px;
   border-radius: 20px;
   background-color: #F4F4F4;
@@ -574,6 +582,7 @@
 @media screen and (max-width: 1024px) {
   .bicycles__card-picture {
     max-width: 320px;
+    align-self: center;
   }
 }
 .bicycles__card-text {
@@ -589,11 +598,17 @@
   opacity: 0.75;
 }
 
+@media screen and (max-width: 1024px) {
+  .bicycles__card-text {
+    align-self: center;
+  }
+}
 .bicycles__card {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
   padding-bottom: 60px;
+  width: 360px;
 }
 
 .bicycles__cards-list {
@@ -605,16 +620,14 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1439px) {
+  .bicycles__cards-list {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .bicycles__cards-list {
     gap: 10px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .bicycles__cards-list {
-    overflow: hidden;
-    max-width: 360px;
-    margin-left: 200px;
   }
 }
 .bicycles__type-link {
@@ -641,6 +654,11 @@
   margin-top: 92px;
 }
 
+@media screen and (max-width: 1439px) {
+  .bicycles__type-lists {
+    margin-right: 120px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .bicycles__type-lists {
     display: none;
@@ -671,6 +689,25 @@
     display: flex;
   }
 }
+.bicycles__dots-lists {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .bicycles__dots-lists {
+    display: flex;
+    gap: 5px;
+  }
+}
+.bicycles__dots-btn {
+  width: 10px;
+  background: lightpink;
+}
+
+.bicycles__dots-btn_active {
+  background-color: #151515;
+}
+
 .training {
   display: grid;
   padding-top: 90px;
@@ -852,6 +889,12 @@
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  .footer__range-container {
+    position: relative;
+    bottom: 100px;
+  }
+}
 .footer__title {
   font-family: Inter;
   font-weight: 600;

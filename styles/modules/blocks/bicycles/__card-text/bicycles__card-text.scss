@@ -10,3 +10,8 @@
 .bicycles__card-text:hover {
     opacity: $opacityLink;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__card-text {
+     align-self: center;
+    }
+}

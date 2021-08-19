@@ -1,4 +1,10 @@
 .type-bike__arrow-container {
     display: flex;
-    justify-content: center;
 }
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__arrow-container{
+        
+        justify-content: center;
+    }
+}
+
