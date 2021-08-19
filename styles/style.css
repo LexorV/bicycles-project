@@ -72,6 +72,19 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 720px) {
+  .header__list-links {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #F4F4F4;
+  }
+}
 .header__link {
   font-family: Inter;
   text-decoration: none;
@@ -86,6 +99,26 @@
 
 .header__link:hover {
   opacity: 0.75;
+}
+
+.header__burg-menu {
+  width: 40px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .header__burg-menu {
+    display: block;
+    float: right;
+  }
+}
+.header__menu-icon {
+  width: 40px;
+  height: 30px;
 }
 
 .title {
