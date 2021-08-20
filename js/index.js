@@ -1,4 +1,4 @@
-const swithButton = document.querySelector('.footer__swith-button');
+const swithButton = document.querySelectorAll('.swith-theme__button');
 const rootSection = document.querySelector('.root');
 const nextSliderBtn = document.querySelector('#nextSliderBtn');
 const previousSliderBtn = document.querySelector('#previousSliderBtn');
@@ -143,9 +143,11 @@ closeBtnHeader.addEventListener('click', function() {
 
 
 
-
+console.log(swithButton);
 swithButton.addEventListener('click', function() {
-    swithButton.classList.toggle('footer__swith-button_active');
+    swithButton.forEach(element => {
+        element.classList.toggle('swith-theme__button_active');
+    });
     rootSection.classList.toggle('root__theme_dark');
 });
 let namber = 0

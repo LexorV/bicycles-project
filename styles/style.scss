@@ -13,7 +13,7 @@
 @import './modules/blocks/header/__close-btn/header__close-btn.scss';
 @import './modules/blocks/header/__close-icon/header__close-icon.scss';
 @import './modules/blocks/header/__container-menu/header__container-menu.scss';
-@import './modules/blocks/header/__container-menu/_active/header__container-menu.scss';
+@import './modules/blocks/header/__container-menu/_active/header__container-menu_active.scss';
 //title & subtitle
 @import './modules/blocks/title/title.scss';
 @import './modules/blocks/subtitle/subtirle.scss';
@@ -78,10 +78,11 @@
 @import './modules/blocks/footer/footer.scss';
 @import './modules/blocks/footer/__copyright/footer__copyright.scss';
 @import './modules/blocks/footer/__form/footer__form.scss';
-@import './modules/blocks/footer/__icon-moon/footer__icon-moon.scss';
-@import './modules/blocks/footer/__icon-sun/footer__icon-sun.scss';
-@import './modules/blocks/footer/__range-container/footer__range-container.scss';
 @import './modules/blocks/footer/__title/footer__title.scss';
-@import './modules/blocks/footer/__swith-button/footer__swith-button.scss';
-@import './modules/blocks/footer/__swith-button/__swith-button_active/footer__swith-button_active.scss';
 @import './modules/blocks/footer/__btn-inform/footer__btn-inform.scss';
+//swith-theme 
+@import './modules/blocks/swith-theme/swith-theme.scss';
+@import './modules/blocks/swith-theme/__icon-moon/swith-theme__icon-moon.scss';
+@import './modules/blocks/swith-theme/__icon-sun/swith-theme__icon-sun.scss';
+@import './modules/blocks/swith-theme/__swith-button/swith-theme__button.scss';
+@import './modules/blocks/swith-theme/__swith-button/__button_active/swith-theme__button_active.scss';

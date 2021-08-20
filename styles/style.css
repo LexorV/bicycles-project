@@ -958,27 +958,6 @@
   color: transparent;
 }
 
-.footer__icon-moon {
-  margin-left: 22px;
-}
-
-.footer__icon-sun {
-  margin-right: 22px;
-}
-
-.footer__range-container {
-  position: absolute;
-  bottom: 60px;
-  right: 0;
-  display: flex;
-}
-
-@media screen and (max-width: 1024px) {
-  .footer__range-container {
-    position: relative;
-    bottom: 100px;
-  }
-}
 .footer__title {
   font-family: Inter;
   font-weight: 600;
@@ -988,7 +967,40 @@
   margin-bottom: 50px;
 }
 
-.footer__swith-button {
+.footer__btn-inform {
+  position: relative;
+  right: 40px;
+  background-color: transparent;
+  border: none;
+  font-family: Inter;
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.swith-theme {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .swith-theme {
+    position: relative;
+    bottom: 100px;
+  }
+}
+.swith-theme__icon-moon {
+  margin-left: 22px;
+}
+
+.swith-theme__icon-sun {
+  margin-right: 22px;
+}
+
+.swith-theme__button {
   width: 44px;
   /* ширина переключателя */
   height: 24px;
@@ -1005,7 +1017,7 @@
   /* анимация */
 }
 
-.footer__swith-button::after {
+.swith-theme__button::after {
   content: "";
   height: 20px;
   /* высота кнопки */
@@ -1025,22 +1037,10 @@
   z-index: 1;
 }
 
-.footer__swith-button_active {
+.swith-theme__button_active {
   background: #545454;
 }
 
-.footer__swith-button_active::after {
-  left: 22px;
-}
-
-.footer__btn-inform {
-  position: relative;
-  right: 40px;
-  background-color: transparent;
-  border: none;
-  font-family: Inter;
-  font-size: 13px;
-  line-height: 28px;
-  font-weight: 500;
-  cursor: pointer;
+.swith-theme__button_active::after {
+  left: 21px;
 }/*# sourceMappingURL=style.css.map */

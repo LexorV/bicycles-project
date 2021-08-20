@@ -1,12 +1,13 @@
-.footer__range-container {
+.swith-theme {
     position: absolute;
     bottom: 60px;
     right: 0;
     display: flex;
 }
+
 @media screen and (max-width: $tabletSizeB) {
-    .footer__range-container{
-      position: relative;
-      bottom: 100px;
+    .swith-theme {
+        position: relative;
+        bottom: 100px;
     }
 }

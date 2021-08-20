@@ -1,4 +1,4 @@
-.footer__swith-button {
+.swith-theme__button {
     width: 44px;
     /* ширина переключателя */
     height: 24px;
@@ -15,7 +15,7 @@
     /* анимация */
 }
 
-.footer__swith-button::after {
+.swith-theme__button::after {
     content: "";
     height: 20px;
     /* высота кнопки */
