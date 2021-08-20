@@ -14,6 +14,7 @@
 @import './modules/blocks/header/__close-icon/header__close-icon.scss';
 @import './modules/blocks/header/__container-menu/header__container-menu.scss';
 @import './modules/blocks/header/__container-menu/_active/header__container-menu_active.scss';
+@import './modules/blocks/header/__menu/header__menu.scss';
 //title & subtitle
 @import './modules/blocks/title/title.scss';
 @import './modules/blocks/subtitle/subtirle.scss';
@@ -86,3 +87,5 @@
 @import './modules/blocks/swith-theme/__icon-sun/swith-theme__icon-sun.scss';
 @import './modules/blocks/swith-theme/__swith-button/swith-theme__button.scss';
 @import './modules/blocks/swith-theme/__swith-button/__button_active/swith-theme__button_active.scss';
+@import './modules/blocks/swith-theme/_hiden/swith-theme_hiden_footer.scss';
+@import './modules/blocks/swith-theme/_hiden/swith-theme_hiden_header.scss';

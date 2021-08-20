@@ -9,3 +9,8 @@
         align-self: center;
     }
 }
+@media screen and (max-width: $tabletSize) {
+    .ride__picture{
+       max-width: 400px;
+    }
+}

@@ -11,3 +11,9 @@
         max-height: 776px;
     }
 }
+@media screen and (max-width: $tabletSize) {
+    .intro__picture {
+        max-width: 400px;
+        max-height: 500px;
+    }
+}

@@ -11,3 +11,11 @@
         bottom: 100px;
     }
 }
+@media screen and (max-width: $tabletSize) {
+    .swith-theme {
+        position: static;
+        margin-bottom: 10vw;
+        margin-top: 50vw;
+        align-self: center;
+    }
+}

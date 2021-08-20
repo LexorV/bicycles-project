@@ -27,3 +27,9 @@
     }
 
 }
+@media screen and (max-width: $tabletSize) {
+    .training {
+       padding-bottom: 0;
+       padding-top: 60px;
+    }
+}

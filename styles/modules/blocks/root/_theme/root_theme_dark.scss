@@ -17,7 +17,10 @@
     .type-bike__button {
         background-color: #434343;
     }
-    .type-bike__arrow {
+    .type-bike__arrow, .header__close-icon, .header__menu-icon {
         filter: invert(1);
+    }
+    .header__container-menu {
+        background-color: #2F2F2F;
     }
 }

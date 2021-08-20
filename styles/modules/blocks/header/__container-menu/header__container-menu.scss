@@ -14,7 +14,7 @@
                 background-color: #F4F4F4;
                 gap: 30px;
                 transition: 2s top;
-                justify-content: center;
-                align-items: center;
+                align-items: flex-end;
+                flex-direction: column;
             }
         }

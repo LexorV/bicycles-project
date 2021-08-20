@@ -20,3 +20,10 @@
         min-width: 460px;
     }
 }
+
+@media screen and (max-width: $tabletSize) {
+    .intro__block-sticky{
+        top: 400px;
+        min-width: 300px;
+    }
+}

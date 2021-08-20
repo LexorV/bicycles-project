@@ -7,3 +7,11 @@
     line-height: 60px;
     max-width: 460px;
 }
+@media screen and (max-width: $tabletSize) {
+    .title {
+       max-width: 240px;
+       font-size: 40px;
+       line-height: 45px;
+       padding-right: 160px;
+    }
+}

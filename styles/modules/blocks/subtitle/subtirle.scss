@@ -5,3 +5,10 @@
     @include styleSubtitle;
     max-width: 460px;
 }
+@media screen and (max-width: $tabletSize) {
+    .subtitle {
+       max-width: 400px;
+       font-size: 14px;
+       line-height: 20px;
+    }
+}
