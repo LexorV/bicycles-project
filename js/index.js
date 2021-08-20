@@ -5,6 +5,10 @@ const previousSliderBtn = document.querySelector('#previousSliderBtn');
 const bicyclesList = document.querySelector('.bicycles__type-list');
 const bicyclesType = document.querySelectorAll('.bicycles__type-link');
 const bicyclesSelect = document.querySelector('.bicycles__select');
+const closeBtnHeader = document.querySelector('.header__close-btn');
+const burgMenuBtn = document.querySelector('.header__burg-menu');
+const popapMenu = document.querySelector('.header__container-menu');
+
 const arrayTypeBicycles = [{
         name: 'Шоссе',
         discription: 'На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.',
@@ -130,6 +134,14 @@ function addTypeBike(dataArray, index) {
 
     return
 }
+burgMenuBtn.addEventListener('click', function() {
+    popapMenu.classList.add('header__container-menu_active');
+});
+closeBtnHeader.addEventListener('click', function() {
+    popapMenu.classList.remove('header__container-menu_active');
+});
+
+
 
 
 swithButton.addEventListener('click', function() {
@@ -191,13 +203,13 @@ function addBike(dataArray, index) {
 }
 addBike(arrayTypeBicycles, 0);
 choiceTypeBicycles(0);
-let indexbicyclesType  = 0;
+let indexbicyclesType = 0;
 
-bicyclesSelect.addEventListener('change', function(){
+bicyclesSelect.addEventListener('change', function() {
     let indexType = bicyclesSelect.options.selectedIndex;
     addBike(arrayTypeBicycles, indexType);
     choiceTypeBicycles(indexType);
-    indexbicyclesType =  indexType;
+    indexbicyclesType = indexType;
     return indexbicyclesType
 });
 
@@ -217,21 +229,21 @@ bicyclesType[2].addEventListener('click', function() {
     addBike(arrayTypeBicycles, 2);
     bicyclesSelect.options.selectedIndex = 2;
 });
-	document.addEventListener( 'DOMContentLoaded', function () {
-		new Splide( '.splide', {
-            classes: {
-                pagination: 'splide__pagination bicycles__dots-list',
-                page: 'splide__pagination__page bicycles__dots-btn',
+document.addEventListener('DOMContentLoaded', function() {
+    new Splide('.splide', {
+        classes: {
+            pagination: 'splide__pagination bicycles__dots-list',
+            page: 'splide__pagination__page bicycles__dots-btn',
+        },
+        padding: {
+            left: 0,
+        },
+        arrows: false,
+        perPage: 3,
+        breakpoints: {
+            1024: {
+                perPage: 1,
             },
-            padding:{
-                left:0,
-            },
-            arrows:false,
-            perPage: 3,
-            breakpoints: {
-                 1024: { 
-                    perPage:1,
-                },
-            }
-        } ).mount();
-	} );
+        }
+    }).mount();
+});
