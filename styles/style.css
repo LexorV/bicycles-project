@@ -97,10 +97,6 @@
   font-weight: 500;
 }
 
-.header__link:nth-child(2) {
-  margin: 0 34px;
-}
-
 .header__link:hover {
   opacity: 0.75;
 }
@@ -199,6 +195,19 @@
   align-self: center;
 }
 
+.header__list:nth-child(2) {
+  margin: 0 34px;
+}
+
+@media screen and (max-width: 720px) {
+  .header__list:nth-child(2) {
+    margin: 0;
+  }
+
+  .header__list {
+    align-self: center;
+  }
+}
 .title {
   margin-top: 60px;
   margin-bottom: 50px;
@@ -1123,7 +1132,6 @@
 .training__title-box {
   grid-area: title;
   display: flex;
-  justify-content: center;
 }
 
 @media screen and (max-width: 460px) {

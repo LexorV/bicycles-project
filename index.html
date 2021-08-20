@@ -13,26 +13,26 @@
 
 <body class="root">
     <header class="header">
-        <button class="header__burg-menu"><img class="header__menu-icon" src="./images/icon/menu-icon.svg"></button>
+        <button class="header__burg-menu"><img alt="Меню" class="header__menu-icon" src="./images/icon/menu-icon.svg"></button>
         <div class="header__container-menu">
-            <button class="header__close-btn"><img class="header__close-icon" src="./images/icon/close-icone.svg"></button>
+            <button class="header__close-btn"><img alt="Закрыть" class="header__close-icon" src="./images/icon/close-icone.svg"></button>
             <nav class="header__menu">
                 <ul class="header__list-links">
-                    <a href="#" class="header__link">
-                        <li class="header__list">Покрытия и градиенты</li>
-                    </a>
-                    <a href="#" class="header__link">
-                        <li class="header__list">Велосипеды</li>
-                    </a>
-                    <a href="#" class="header__link">
-                        <li class="header__list">Тренировки</li>
-                    </a>
+                    <li class="header__list"> <a href="#typeBike" class="header__link">
+                        Покрытия и градиенты
+                    </a></li>
+                    <li class="header__list">  <a href="#bicycles" class="header__link">
+                        Велосипеды
+                    </a></li>
+                    <li class="header__list"> <a href="#training" class="header__link">
+                        Тренировки
+                    </a></li>
                 </ul>
             </nav>
             <div class="swith-theme swith-theme_hiden_header">
-                <img class="swith-theme__icon-sun" src="./images/icon/sun.svg">
+                <img class="swith-theme__icon-sun" alt="Солнце" src="./images/icon/sun.svg">
                 <button id="swithThemeHeader" class="swith-theme__button"></button>
-                <img class="swith-theme__icon-moon" src="./images/icon/moon.svg">
+                <img class="swith-theme__icon-moon" alt="Луна" src="./images/icon/moon.svg">
             </div>
         </div>
     </header>
@@ -48,7 +48,7 @@
                     <div class="intro__container-line">
                         <p class="intro__text-bike">Cannondale Systemsix
                         </p>
-                        <hr color="black" class="intro__line">
+                        <hr class="intro__line">
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <img class="intro__picture" src="./images/intro__road.jpg" alt="Дорога в лес">
             </div>
             <div class="intro__block-sticky">
-                <img class="intro__siticky-picture" src="./images/bike/bike2.jpg">
-            </div>
+                <img class="intro__siticky-picture" alt="Велосипед" src="./images/bike/bike2.jpg">
             </div>
         </section>
         <section class="ride">
@@ -68,7 +67,7 @@
                 <p class="ride__busy">Велогонщик</p>
             </div>
         </section>
-        <section class="type-bike">
+        <section id="typeBike" class="type-bike">
                 <div class="type-bike__slide  type-bike__slide_active">
                     <div class="type-bike__box-title">
                     <h2 class="title title_position_type-bike"></h2></div>
@@ -77,19 +76,19 @@
                     <div class="type-bike__container-picture">
                         <div class="type-bike__box-picture">
                             <div class="type-bike__form-icon">
-                                <img class="type-bike__icon-pulse" src="./images/icon/icone-type-bike2.svg">
+                                <img class="type-bike__icon-pulse" alt="Полоса" src="./images/icon/icone-type-bike2.svg">
                             </div>
                         <img id="typeBikePicture1" src="" class="type-bike__picture type-bike__button_active" alt="">
                         <img id="typeBikePicture2" src="" class="type-bike__picture" alt="">
                     </div>
                     </div>
                     <div class="type-bike__arrow-container">
-                        <button id="previousSliderBtn" class="type-bike__button"><img class="type-bike__arrow" src="./images/icon/previous_arrow.svg"></button>
-                        <button id="nextSliderBtn" class="type-bike__button type-bike__button_active"><img class="type-bike__arrow" src="./images/icon/arrow_next.svg"></button>
+                        <button id="previousSliderBtn" class="type-bike__button"><img alt="Стрелка влево" class="type-bike__arrow" src="./images/icon/previous_arrow.svg"></button>
+                        <button id="nextSliderBtn" class="type-bike__button type-bike__button_active"><img alt="Стрелка вправо" class="type-bike__arrow" src="./images/icon/arrow_next.svg"></button>
                     </div>
             </div>
         </section>
-        <section class="bicycles">
+        <section id="bicycles" class="bicycles">
             <div class="bicycles__block-top">
                 <h2 class="title">Велосипеды</h2>
                 <select class="bicycles__select">
@@ -122,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="training">
+        <section id="training" class="training">
             <div class="training__title-box">
                 <h2 class="title">Тренировки</h2>
             </div>
@@ -143,18 +142,16 @@
     <footer class="footer">
         <h2 class="footer__title">Подпишитесь на рассылку —</h2>
         <div>
-            <input type="email" class="footer__form" placeholder="Ваш e-mail"></input>
+            <input type="email" class="footer__form" placeholder="Ваш e-mail">
             <button class="footer__btn-inform">ok</button></div>
         <p class="footer__copyright">&copy;Road Club 2021</p>
         <div class="swith-theme swith-theme_hiden_footer">
-            <img class="swith-theme__icon-sun" src="./images/icon/sun.svg">
+            <img class="swith-theme__icon-sun " alt="Солнце" src="./images/icon/sun.svg">
             <button id="swithThemeFooter" class="swith-theme__button"></button>
-            <img class="swith-theme__icon-moon" src="./images/icon/moon.svg">
+            <img class="swith-theme__icon-moon" alt="Луна" src="./images/icon/moon.svg">
         </div>
     </footer>
-
-
+    <script src="./js/index.js"></script>
 </body>
-<script src="./js/index.js"></script>
 
 </html>

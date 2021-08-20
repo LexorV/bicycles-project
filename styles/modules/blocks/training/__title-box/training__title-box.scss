@@ -1,7 +1,6 @@
 .training__title-box {
    grid-area: title;
   display: flex;
-  justify-content: center;
 }
 @media screen and (max-width: $mobileSize) {
   .training__title-box {
