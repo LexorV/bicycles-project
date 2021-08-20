@@ -9,3 +9,10 @@
     font-weight: 500;
     cursor: pointer;
 }
+@media screen and (max-width: $mobileSize) {
+    .footer__btn-inform {
+       right: 30px;
+       top:0;
+       z-index: 7;
+    }
+}

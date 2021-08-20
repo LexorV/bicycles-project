@@ -1,0 +1,10 @@
+.type-bike__box-subtitle {
+    
+}
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__box-subtitle{
+        display: flex;
+        justify-content: center;
+        grid-area: text;
+    }
+}

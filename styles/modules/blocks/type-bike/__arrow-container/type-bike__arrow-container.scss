@@ -1,5 +1,6 @@
 .type-bike__arrow-container {
     display: flex;
+    grid-area: arrows;
 }
 @media screen and (max-width: $tabletSizeB) {
     .type-bike__arrow-container{

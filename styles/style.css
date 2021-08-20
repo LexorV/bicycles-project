@@ -251,6 +251,11 @@
     line-height: 18px;
   }
 }
+.title_position_type-bike {
+  padding: 0;
+  display: flex-end;
+}
+
 .intro {
   display: grid;
   margin-left: 120px;
@@ -666,18 +671,24 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 460px) {
+  .type-bike__button {
+    width: 24px;
+    height: 24px;
+  }
+}
 .type-bike__container-picture {
   position: relative;
   display: flex;
   gap: 40px;
-  margin-top: 80px;
   margin-bottom: 50px;
-  overflow: hidden;
+  grid-area: picture;
 }
 
 @media screen and (max-width: 1024px) {
   .type-bike__container-picture {
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 .type-bike__form-icon {
@@ -747,9 +758,10 @@
 }
 @media screen and (max-width: 1024px) {
   .type-bike__slide {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
+    grid-template-areas: "title arrows" "picture picture" "text text";
   }
 }
 .type-bike__button_active {
@@ -758,11 +770,59 @@
 
 .type-bike__arrow-container {
   display: flex;
+  grid-area: arrows;
 }
 
 @media screen and (max-width: 1024px) {
   .type-bike__arrow-container {
     justify-content: center;
+  }
+}
+.type-bike__box-picture {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  grid-area: picture;
+}
+
+@media screen and (max-width: 1024px) {
+  .type-bike__box-picture {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .type-bike__box-subtitle {
+    display: flex;
+    justify-content: center;
+    grid-area: text;
+  }
+}
+.type-bike__box-title {
+  grid-area: title;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .type-bike__box-title {
+    justify-content: flex-end;
+    padding-right: 160px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 460px) {
+  .type-bike__box-title {
+    justify-content: start;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .type-bike__arrow {
+    width: 5px;
+    height: 10px;
+    background-size: cover;
   }
 }
 .bicycles {
@@ -1193,6 +1253,13 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 460px) {
+  .footer__btn-inform {
+    right: 30px;
+    top: 0;
+    z-index: 7;
+  }
+}
 .swith-theme {
   position: absolute;
   bottom: 60px;

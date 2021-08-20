@@ -13,3 +13,9 @@
 .type-bike__button:first-of-type {
     margin-right: 20px;
 }
+@media screen and (max-width: $mobileSize) {
+    .type-bike__button{
+       width: 24px;
+       height: 24px;
+    }
+}

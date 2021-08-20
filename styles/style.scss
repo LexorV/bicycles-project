@@ -18,6 +18,7 @@
 //title & subtitle
 @import './modules/blocks/title/title.scss';
 @import './modules/blocks/subtitle/subtirle.scss';
+@import './modules/blocks/title/_position/title_position_type-bike.scss';
 //intro 
 @import './modules/blocks/intro/intro.scss';
 @import './modules/blocks/intro/__detail-button/intro__detail-button.scss';
@@ -46,9 +47,12 @@
 @import './modules/blocks/type-bike/__icon-pulse/type-bike__icon-pulse.scss';
 @import './modules/blocks/type-bike/__picture/type-bike__picture.scss';
 @import './modules/blocks/type-bike/__slide/type-bike__slide.scss';
-@import './modules/blocks/type-bike/__slider/type-bike__slider.scss';
 @import './modules/blocks/type-bike/__button/_active/type-bike__button_active.scss';
 @import './modules/blocks/type-bike/__arrow-container/type-bike__arrow-container.scss';
+@import './modules/blocks/type-bike/__box-picture/type-bike__box-picture.scss';
+@import './modules/blocks/type-bike/__box-subtitle/type-bike__box-subtitle.scss';
+@import './modules/blocks/type-bike/__box-title/type-bike__box-title.scss';
+@import './modules/blocks/type-bike/__arrow/type-bike__arrow.scss';
 //bicycles
 @import './modules/blocks/bicycles/bicycles.scss';
 @import './modules/blocks/bicycles/__block-top/bicycles__block-top.scss';
