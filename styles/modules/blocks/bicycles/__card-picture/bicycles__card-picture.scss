@@ -18,3 +18,8 @@
         align-self: center;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .bicycles__card-picture {
+       max-width: 255px;
+    }
+}

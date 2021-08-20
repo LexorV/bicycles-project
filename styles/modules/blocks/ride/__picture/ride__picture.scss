@@ -14,3 +14,8 @@
        max-width: 400px;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .ride__picture  {
+       max-width: 284px;
+    }
+}

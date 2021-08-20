@@ -15,3 +15,11 @@
        left: 0;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .type-bike__form-icon {
+        width: 70px;
+        height: 28px;
+        bottom: 10px;
+        background-image: url('/images/icon/pulse-background-min.svg');
+    }
+}

@@ -32,3 +32,8 @@
 .footer__form:focus::placeholder {
     color: transparent
 }
+@media screen and (max-width: $mobileSize) {
+    .footer__form  {
+        min-width: 283px;
+        max-width: 286px;
+}}

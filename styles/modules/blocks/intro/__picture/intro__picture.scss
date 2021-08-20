@@ -17,3 +17,11 @@
         max-height: 500px;
     }
 }
+
+@media screen and (max-width: $mobileSize) {
+    .intro__picture {
+        margin-left: 20px;
+        max-width: 254px;
+        max-height: 348px;
+    }
+}

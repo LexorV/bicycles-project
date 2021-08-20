@@ -12,3 +12,9 @@
         float: right;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .header__burg-menu  {
+        width: 22px;
+        height: 18px;
+    }
+}

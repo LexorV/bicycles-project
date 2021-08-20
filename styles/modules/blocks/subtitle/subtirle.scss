@@ -12,3 +12,10 @@
        line-height: 20px;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .subtitle  {
+       max-width: 284px;
+       font-size: 12px;
+       line-height: 18px;
+    }
+}

@@ -7,3 +7,9 @@
         justify-content: center;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .intro__title-box {
+        justify-content: center;
+        padding-right: 94px;
+    }
+}

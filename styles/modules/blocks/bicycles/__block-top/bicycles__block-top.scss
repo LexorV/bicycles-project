@@ -9,3 +9,8 @@
       align-items: center;
     }
 }
+@media screen and (max-width: $mobileSize) {
+  .bicycles__block-top  {
+    align-items: flex-start;
+  }
+}

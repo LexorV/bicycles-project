@@ -23,3 +23,9 @@
               margin-top: 0;
             }
         }
+        @media screen and (max-width: $mobileSize) {
+            .training__picture {
+               max-width: 284px;
+               max-height: 225px;
+            }
+        }

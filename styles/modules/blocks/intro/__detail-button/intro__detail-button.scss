@@ -37,3 +37,8 @@
         margin-bottom:0;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .intro__detail-button {
+        max-width: 284px;
+    }
+}

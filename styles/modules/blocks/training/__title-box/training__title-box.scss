@@ -3,3 +3,9 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: $mobileSize) {
+  .training__title-box {
+     justify-content: center;
+     padding-right: 92px;
+  }
+}

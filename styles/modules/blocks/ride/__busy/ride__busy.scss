@@ -8,3 +8,9 @@
       align-self: flex-start;
     }
 }
+@media screen and (max-width: $mobileSize) {
+  .ride__busy  {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

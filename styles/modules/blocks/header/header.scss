@@ -2,3 +2,8 @@
     @include field;
     padding: 28px 0;
 }
+@media screen and (max-width: $mobileSize) {
+    .header {
+        padding: 28px 0 10px 0;
+    }
+}
