@@ -1,4 +1,7 @@
 const swithButton = document.querySelectorAll('.swith-theme__button');
+const swithThemeFooter = document.querySelector('#swithThemeFooter');
+const swithThemeHeader = document.querySelector('#swithThemeHeader');
+
 const rootSection = document.querySelector('.root');
 const nextSliderBtn = document.querySelector('#nextSliderBtn');
 const previousSliderBtn = document.querySelector('#previousSliderBtn');
@@ -144,12 +147,20 @@ closeBtnHeader.addEventListener('click', function() {
 
 
 console.log(swithButton);
-swithButton.addEventListener('click', function() {
+swithThemeHeader.addEventListener('click', function() {
     swithButton.forEach(element => {
         element.classList.toggle('swith-theme__button_active');
     });
     rootSection.classList.toggle('root__theme_dark');
 });
+swithThemeFooter.addEventListener('click', function() {
+    swithButton.forEach(element => {
+        element.classList.toggle('swith-theme__button_active');
+    });
+    rootSection.classList.toggle('root__theme_dark');
+});
+
+
 let namber = 0
 addTypeBike(arrayTypeBicycles, namber);
 
