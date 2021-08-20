@@ -1,0 +1,25 @@
+.type-bike__form-icon {
+    background-image: url('/images/icon/pulse-background.svg');
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-top: 12px;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 16px;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__form-icon {
+       bottom: 14px;
+       left: 0;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .type-bike__form-icon {
+        width: 70px;
+        height: 28px;
+        bottom: 10px;
+        background-image: url('/images/icon/pulse-background-min.svg');
+    }
+}

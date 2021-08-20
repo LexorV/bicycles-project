@@ -1,0 +1,72 @@
+@mixin field {
+    margin-left: $marginDesktopL;
+    margin-right: $marginDesktopR;
+    @media screen and (max-width: $desktMinopeSize) {
+        & {
+            margin-right: $marginDesktopMinR;
+            margin-left: $marginDesktopMinL;
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        & {
+            margin-right: $marginTabletR;
+            margin-left: $marginTabletL;
+        }
+    }
+    @media screen and (max-width: $mobileSize) {
+        & {
+            margin-right: $marginMobileR;
+            margin-left: $marginMobileL;
+        }
+    }
+}
+
+@mixin field2 {
+    margin-left: $marginDesktopL;
+    @media screen and (max-width: $desktMinopeSize) {
+        & {
+            margin-left: $marginDesktopMinL;
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        & {
+            margin-left: $marginTabletL;
+        }
+    }
+    @media screen and (max-width: $mobileSize) {
+        & {
+            margin-left: $marginMobileL;
+        }
+    }
+}
+
+@mixin pictureSizeChange {
+    max-width: 650px;
+    @media screen and (max-width: $desktMinopeSize) {
+        & {
+            max-width: 450px;
+        }
+    }
+    @media screen and (max-width: $tabletSizeB) {
+        & {
+            max-width: 550px;
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        & {
+            max-width: 450px;
+        }
+    }
+    @media screen and (max-width: $mobileSize) {
+        & {
+            max-width: 284px;
+        }
+    }
+}
+
+@mixin styleSubtitle {
+    opacity: 0.7;
+    font-family: $fontMain;
+    font-weight: 400;
+    font-style: normal;
+}

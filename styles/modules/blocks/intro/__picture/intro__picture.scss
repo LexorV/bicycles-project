@@ -1,0 +1,27 @@
+.intro__picture {
+    max-width: 610px;
+    max-height: 836px;
+    margin: 0;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: $desktMinopeSize) {
+    .intro__picture {
+        max-width: 550px;
+        max-height: 776px;
+    }
+}
+@media screen and (max-width: $tabletSize) {
+    .intro__picture {
+        max-width: 400px;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: $mobileSize) {
+    .intro__picture {
+        margin-left: 20px;
+        max-width: 254px;
+        max-height: 348px;
+    }
+}

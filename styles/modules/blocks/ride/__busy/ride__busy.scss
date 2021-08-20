@@ -1,0 +1,16 @@
+.ride__busy {
+    @include styleSubtitle;
+    font-size: 16px;
+    margin: 0;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .ride__busy{
+      align-self: flex-start;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+  .ride__busy  {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

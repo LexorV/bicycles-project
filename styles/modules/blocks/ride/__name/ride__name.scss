@@ -1,0 +1,18 @@
+.ride__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 262px 0 5px 0;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .ride__name{
+        margin: 40px 0 4px 0;
+        align-self: flex-start;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .ride__name {
+       font-size: 14px;
+       line-height: 22px;
+    }
+}

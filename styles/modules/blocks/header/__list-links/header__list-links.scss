@@ -1,0 +1,22 @@
+.header__list-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+}
+
+@media screen and (max-width: $tabletSizeB) {
+    .header__list-links {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: $tabletSize) {
+    .header__list-links {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        z-index: 6;
+        align-self: center;
+    }
+}

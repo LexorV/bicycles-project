@@ -1,0 +1,9 @@
+.bicycles__dots-lists {
+    display: none;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__dots-lists{
+      display: flex;
+    gap: 5px;
+    }
+}

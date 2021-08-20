@@ -1,0 +1,8 @@
+.swith-theme_hiden_header {
+    display: none;
+}
+@media screen and (max-width: $tabletSize) {
+    .swith-theme_hiden_header  {
+     display: flex;
+    }
+}

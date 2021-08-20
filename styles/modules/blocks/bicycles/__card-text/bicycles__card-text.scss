@@ -1,0 +1,17 @@
+.bicycles__card-text {
+    font-family: $fontMain;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 22px 0 0 20px;
+    text-decoration: none;
+}
+
+.bicycles__card-text:hover {
+    opacity: $opacityLink;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__card-text {
+     align-self: center;
+    }
+}
