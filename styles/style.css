@@ -76,13 +76,13 @@
   .header__list-links {
     flex-direction: column;
     position: absolute;
-    top: 0;
-    right: 0;
     top: -100%;
+    right: 0;
     width: 100vw;
     height: 100vh;
     z-index: 5;
     background-color: #F4F4F4;
+    gap: 30px;
   }
 }
 .header__link {
@@ -101,6 +101,13 @@
   opacity: 0.75;
 }
 
+@media screen and (max-width: 720px) {
+  .header__link {
+    flex-direction: column;
+    align-self: center;
+    font-size: 18px;
+  }
+}
 .header__burg-menu {
   width: 40px;
   height: 30px;
@@ -119,6 +126,27 @@
 .header__menu-icon {
   width: 40px;
   height: 30px;
+}
+
+.header__close-btn {
+  border: none;
+  background-color: transparent;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 6;
+  position: relative;
+  float: right;
+  display: none;
+}
+
+.header__close-btn:hover {
+  opacity: 0.6;
+}
+
+.header__close-icon {
+  width: 42px;
+  height: 42px;
 }
 
 .title {

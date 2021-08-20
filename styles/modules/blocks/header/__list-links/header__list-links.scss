@@ -4,21 +4,23 @@
     list-style-type: none;
     margin: 0;
 }
+
 @media screen and (max-width: $tabletSizeB) {
     .header__list-links {
         justify-content: center;
     }
 }
+
 @media screen and (max-width: $tabletSize) {
     .header__list-links {
         flex-direction: column;
         position: absolute;
-        top: 0;
+        top: -100%;
         right: 0;
-       top: -100%;
         width: 100vw;
         height: 100vh;
         z-index: 5;
         background-color: #F4F4F4;
+        gap: 30px;
     }
 }

@@ -1,0 +1,15 @@
+.header__close-btn {
+    border: none;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 6;
+    position: relative;
+    float: right;
+    display: none;
+}
+
+.header__close-btn:hover {
+    opacity: 0.6;
+}
