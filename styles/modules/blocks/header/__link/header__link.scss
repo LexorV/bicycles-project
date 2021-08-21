@@ -1,0 +1,19 @@
+.header__link {
+    font-family: $fontMain;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.header__link:hover {
+    opacity: $opacityLink;
+}
+
+@media screen and (max-width: $tabletSize) {
+    .header__link {
+        flex-direction: column;
+        align-self: center;
+        font-size: 18px;
+    }
+}

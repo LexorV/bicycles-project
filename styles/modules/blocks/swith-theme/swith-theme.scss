@@ -1,0 +1,21 @@
+.swith-theme {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    display: flex;
+}
+
+@media screen and (max-width: $tabletSizeB) {
+    .swith-theme {
+        position: relative;
+        bottom: 100px;
+    }
+}
+@media screen and (max-width: $tabletSize) {
+    .swith-theme {
+        position: static;
+        margin-bottom: 10vw;
+        margin-top: 50vw;
+        align-self: center;
+    }
+}

@@ -1,0 +1,16 @@
+.bicycles__block-top {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__block-top  {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+  .bicycles__block-top  {
+    align-items: flex-start;
+  }
+}

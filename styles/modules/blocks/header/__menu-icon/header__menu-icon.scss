@@ -1,0 +1,9 @@
+.header__menu-icon {
+    width: 40px;
+    height: 30px;
+}
+@media screen and (max-width: $mobileSize) {
+    .header__menu-icon {
+        width: 22px;
+        height: 18px;
+    }}

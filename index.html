@@ -6,22 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дорожный клуб</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./vendor/splide-2.4.21/dist/css/splide.min.css">
+    <script src="./vendor/splide-2.4.21/dist/js/splide.min.js"></script>
 </head>
 
-<body>
+<body class="root">
     <header class="header">
-
+        <button class="header__burg-menu"><img alt="Меню" class="header__menu-icon" src="./images/icon/menu-icon.svg"></button>
+        <div class="header__container-menu">
+            <button class="header__close-btn"><img alt="Закрыть" class="header__close-icon" src="./images/icon/close-icone.svg"></button>
+            <nav class="header__menu">
+                <ul class="header__list-links">
+                    <li class="header__list"> <a href="#typeBike" class="header__link">
+                        Покрытия и градиенты
+                    </a></li>
+                    <li class="header__list">  <a href="#bicycles" class="header__link">
+                        Велосипеды
+                    </a></li>
+                    <li class="header__list"> <a href="#training" class="header__link">
+                        Тренировки
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="swith-theme swith-theme_hiden_header">
+                <img class="swith-theme__icon-sun" alt="Солнце" src="./images/icon/sun.svg">
+                <button id="swithThemeHeader" class="swith-theme__button"></button>
+                <img class="swith-theme__icon-moon" alt="Луна" src="./images/icon/moon.svg">
+            </div>
+        </div>
     </header>
-    <section class="intro"></section>
-    <section class="ride"> </section>
-    <section class="type-bike"></section>
-    <section class="bicycles"></section>
-    <section class="training"></section>
-    <footer class="footer"></footer>
-
-
+    <main>
+        <section class="intro">
+            <div class="intro__title-box">
+                <h1 class="title">Шоссе, ТТ и Грэвел</h1>
+            </div>
+            <div class="intro__text-box">
+                <div class="intro__text-container">
+                    <p class="subtitle">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+                    <button class="intro__detail-button">Подробнее</button>
+                    <div class="intro__container-line">
+                        <p class="intro__text-bike">Cannondale Systemsix
+                        </p>
+                        <hr class="intro__line">
+                    </div>
+                </div>
+            </div>
+            <div class="intro__picture-box">
+                <img class="intro__picture" src="./images/intro__road.jpg" alt="Дорога в лес">
+            </div>
+            <div class="intro__block-sticky">
+                <img class="intro__siticky-picture" alt="Велосипед" src="./images/bike/bike2.jpg">
+            </div>
+        </section>
+        <section class="ride">
+            <img class="ride__picture" src="./images/ride__hills.jpg" alt="Горы и дорога">
+            <div class="ride__container-text">
+                <h2 class="ride__title">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
+                <p class="ride__name">Эдди Меркс</p>
+                <p class="ride__busy">Велогонщик</p>
+            </div>
+        </section>
+        <section id="typeBike" class="type-bike">
+                <div class="type-bike__slide  type-bike__slide_active">
+                    <div class="type-bike__box-title">
+                    <h2 class="title title_position_type-bike"></h2></div>
+                    <div class="type-bike__box-subtitle">
+                    <p class="subtitle"></p></div>
+                    <div class="type-bike__container-picture">
+                        <div class="type-bike__box-picture">
+                            <div class="type-bike__form-icon">
+                                <img class="type-bike__icon-pulse" alt="Полоса" src="./images/icon/icone-type-bike2.svg">
+                            </div>
+                        <img id="typeBikePicture1" src="" class="type-bike__picture type-bike__button_active" alt="">
+                        <img id="typeBikePicture2" src="" class="type-bike__picture" alt="">
+                    </div>
+                    </div>
+                    <div class="type-bike__arrow-container">
+                        <button id="previousSliderBtn" class="type-bike__button"><img alt="Стрелка влево" class="type-bike__arrow" src="./images/icon/previous_arrow.svg"></button>
+                        <button id="nextSliderBtn" class="type-bike__button type-bike__button_active"><img alt="Стрелка вправо" class="type-bike__arrow" src="./images/icon/arrow_next.svg"></button>
+                    </div>
+            </div>
+        </section>
+        <section id="bicycles" class="bicycles">
+            <div class="bicycles__block-top">
+                <h2 class="title">Велосипеды</h2>
+                <select class="bicycles__select">
+                    <option  class="bicycles__select-list">Шоссе</option>
+                    <option  class="bicycles__select-list">Гравел</option>
+                    <option  class="bicycles__select-list">ТТ</option>
+                </select>
+                <ul class="bicycles__type-lists">
+                    <li class="bicycles__type-list"><button class="bicycles__type-link">Шоссе</button></li>
+                    <li class="bicycles__type-list"><button class="bicycles__type-link">Грэвел</button></li>
+                    <li class="bicycles__type-list"><button class="bicycles__type-link">TT</button></li>
+                </ul>
+            </div>
+            <div id="bicycleSplide" class="splide">
+                <div class="splide__track">
+                    <ul class="bicycles__cards-list splide__list">
+                        <li class="bicycles__card splide__slide">
+                            <img class="bicycles__card-picture " src="">
+                            <a href="#" class="bicycles__card-text"></a>
+                        </li>
+                        <li class="bicycles__card splide__slide">
+                            <img class="bicycles__card-picture" src="">
+                            <a href="#" class="bicycles__card-text"></a>
+                        </li>
+                        <li class="bicycles__card splide__slide">
+                            <img class="bicycles__card-picture" src="">
+                            <a href="#" class="bicycles__card-text"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="training" class="training">
+            <div class="training__title-box">
+                <h2 class="title">Тренировки</h2>
+            </div>
+            <div class="training__text-box">
+                <div class="training__text-container">
+                    <p class="subtitle">Чтобы найти маршрут для тренировки мо nжно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+                    <div class="training__links">
+                        <a href="https://www.strava.com" class="training__link">Strava</a>
+                        <a href="https://www.komoot.com" class="training__link">Komoot</a>
+                    </div>
+                </div>
+            </div>
+            <div class="training__picture-box">
+                <img class="training__picture" src="./images/training__picture.jpg" alt="Дорога в лес">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+        <div>
+            <input type="email" class="footer__form" placeholder="Ваш e-mail">
+            <button class="footer__btn-inform">ok</button></div>
+        <p class="footer__copyright">&copy;Road Club 2021</p>
+        <div class="swith-theme swith-theme_hiden_footer">
+            <img class="swith-theme__icon-sun " alt="Солнце" src="./images/icon/sun.svg">
+            <button id="swithThemeFooter" class="swith-theme__button"></button>
+            <img class="swith-theme__icon-moon" alt="Луна" src="./images/icon/moon.svg">
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
-<script src="./js/index.js"></script>
 
 </html>

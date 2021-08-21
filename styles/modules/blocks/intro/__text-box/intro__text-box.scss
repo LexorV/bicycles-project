@@ -1,0 +1,11 @@
+.intro__text-box {
+    grid-area: text;
+    display: flex;
+}
+
+@media screen and (max-width: $tabletSizeB) {
+    .intro__text-box {
+        justify-content: center;
+        padding-top: 40px;
+    }
+}

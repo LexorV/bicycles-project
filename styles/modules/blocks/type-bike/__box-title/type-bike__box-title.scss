@@ -1,0 +1,18 @@
+.type-bike__box-title{
+    grid-area: title;
+    display: flex;
+    
+}
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__box-title{
+        justify-content: flex-end;
+        padding-right: 160px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .type-bike__box-title{
+        justify-content: start;
+        padding-right: 60px;
+    }
+}

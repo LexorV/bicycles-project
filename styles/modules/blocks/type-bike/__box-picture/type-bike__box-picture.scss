@@ -1,0 +1,14 @@
+.type-bike__box-picture {
+position: relative;
+display: flex;
+gap: 40px;
+margin-top: 80px;
+margin-bottom: 50px;
+overflow: hidden;
+grid-area: picture;}
+
+@media screen and (max-width: $tabletSizeB) {
+    .type-bike__box-picture {
+     margin-top: 0;
+    }
+}

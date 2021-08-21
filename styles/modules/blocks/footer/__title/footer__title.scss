@@ -1,0 +1,13 @@
+.footer__title {
+    font-family: $fontMain;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 229px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: $mobileSize) {
+    .footer__title  {
+       padding-right: 65px;
+    }
+}

@@ -1,0 +1,21 @@
+.subtitle {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    @include styleSubtitle;
+    max-width: 460px;
+}
+@media screen and (max-width: $tabletSize) {
+    .subtitle {
+       max-width: 400px;
+       font-size: 14px;
+       line-height: 20px;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .subtitle  {
+       max-width: 284px;
+       font-size: 12px;
+       line-height: 18px;
+    }
+}

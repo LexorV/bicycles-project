@@ -1,0 +1,15 @@
+.intro__title-box {
+    grid-area: title;
+    display: flex;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .intro__title-box {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .intro__title-box {
+        justify-content: center;
+        padding-right: 94px;
+    }
+}

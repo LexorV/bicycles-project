@@ -1,0 +1,19 @@
+.ride__container-text {
+    padding-left: 80px;
+}
+@media screen and (max-width: $tabletSizeB) {
+    .ride__container-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      max-width: 550px;
+    }
+}
+@media screen and (max-width: $tabletSize) {
+  .ride__container-text{
+    justify-content: center;
+    padding: 0;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,20 @@
+        .header__container-menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        @media screen and (max-width: $tabletSize) {
+            .header__container-menu {
+                position: absolute;
+                top: -100%;
+                right: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 5;
+                background-color: #F4F4F4;
+                gap: 30px;
+                transition: 2s top;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+        }
