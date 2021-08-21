@@ -1,5 +1,5 @@
 .type-bike__form-icon {
-    background-image: url('/images/icon/pulse-background.svg');
+    background-image: url('./../images/icon/pulse-background.svg');
     background-repeat: no-repeat;
     box-sizing: border-box;
     padding-left: 16px;
@@ -20,6 +20,6 @@
         width: 70px;
         height: 28px;
         bottom: 10px;
-        background-image: url('/images/icon/pulse-background-min.svg');
+        background-image: url('./../images/icon/pulse-background-min.svg');
     }
 }
