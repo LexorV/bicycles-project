@@ -19,11 +19,11 @@ const arrayTypeBicycles = [{
         name: 'Шоссе',
         discription: 'На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.',
         picture1: {
-            src: './images/type-bike__roud.jpg',
+            src: './images/type-bike__roud1.jpg',
             alt: 'Дорога Шоссе'
         },
         picture2: {
-            src: './images/type-bike__roud1.jpg',
+            src: './images/type-bike__roud2.jpg',
             alt: 'Дорога гравий'
         },
         icone: {
