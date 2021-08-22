@@ -1269,7 +1269,6 @@
 }
 
 .footer__form {
-  margin-bottom: 100px;
   min-width: 360px;
   min-height: 50px;
   border-radius: 4px;
@@ -1307,6 +1306,9 @@
   .footer__form {
     min-width: 283px;
     max-width: 286px;
+    position: relative;
+    z-index: 1;
+    top: 0;
   }
 }
 .footer__title {
@@ -1333,6 +1335,7 @@
   line-height: 28px;
   font-weight: 500;
   cursor: pointer;
+  display: none;
 }
 
 @media screen and (max-width: 460px) {
@@ -1342,6 +1345,15 @@
     z-index: 7;
   }
 }
+.footer__container-form {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.footer__btn-inform_hiden {
+  display: block;
+}
+
 .swith-theme {
   position: absolute;
   bottom: 60px;

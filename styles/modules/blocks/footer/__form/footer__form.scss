@@ -1,5 +1,4 @@
 .footer__form {
-    margin-bottom: 100px;
     min-width: 360px;
     min-height: 50px;
     border-radius: 4px;
@@ -36,4 +35,7 @@
     .footer__form  {
         min-width: 283px;
         max-width: 286px;
+        position: relative;
+        z-index: 1;
+        top: 0;
 }}

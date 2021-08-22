@@ -1,6 +1,9 @@
 const swithButton = document.querySelectorAll('.swith-theme__button');
 const swithThemeFooter = document.querySelector('#swithThemeFooter');
 const swithThemeHeader = document.querySelector('#swithThemeHeader');
+const formFooterBtn = document.querySelector('.footer__btn-inform');
+const formFooter = document.querySelector('.footer__form');
+const formfooterBox = document.querySelector('.footer__container-form')
 
 const rootSection = document.querySelector('.root');
 const nextSliderBtn = document.querySelector('#nextSliderBtn');
@@ -158,6 +161,15 @@ swithThemeFooter.addEventListener('click', function() {
     });
     rootSection.classList.toggle('root__theme_dark');
 });
+formFooter.addEventListener('focus', function() {
+    formFooterBtn.classList.add('footer__btn-inform_hiden');
+});
+formfooterBox.addEventListener('submit', function(event) {
+    event.preventDefault();
+    formFooter.value = 'Круто!';
+    formFooterBtn.classList.remove('footer__btn-inform_hiden');
+});
+
 
 
 let namber = 0
