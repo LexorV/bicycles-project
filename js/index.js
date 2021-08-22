@@ -146,7 +146,6 @@ closeBtnHeader.addEventListener('click', function() {
 
 
 
-console.log(swithButton);
 swithThemeHeader.addEventListener('click', function() {
     swithButton.forEach(element => {
         element.classList.toggle('swith-theme__button_active');
@@ -168,12 +167,13 @@ nextSliderBtn.addEventListener('click', function() {
     if (namber < arrayTypeBicycles.length - 1) {
         namber++
         addTypeBike(arrayTypeBicycles, namber);
+        /* //Изменение цвета стрелки при переключении
         if (namber == arrayTypeBicycles.length - 1) {
             nextSliderBtn.classList.remove('type-bike__button_active');
             previousSliderBtn.classList.add('type-bike__button_active');
         } else if (namber != 0) {
             previousSliderBtn.classList.add('type-bike__button_active');
-        } else { nextSliderBtn.classList.add('type-bike__button_active') }
+        } else { nextSliderBtn.classList.add('type-bike__button_active') }*/
     };
     return
 });
@@ -181,9 +181,10 @@ previousSliderBtn.addEventListener('click', function() {
     if (namber > 0) {
         nextSliderBtn.classList.add('type-bike__button_active');
         namber--
+        /*
         if (namber == 0) {
             previousSliderBtn.classList.remove('type-bike__button_active');
-        }
+        }*/
         addTypeBike(arrayTypeBicycles, namber);
         return
     } else if (namber == 1) {

@@ -1,18 +1,19 @@
 .root__theme_dark {
     background-color: #2F2F2F;
-    color: white;
+    color: $ColorTextWhite;
     a {
-        color: white;
+        color: $ColorTextWhite;
     }
     input {
         background-color: #2F2F2F;
         caret-color: white;
+        color: $ColorTextWhite;
     }
     input::placeholder {
-        color: white;
+        color: $ColorTextWhite;
     }
     button {
-        color: white;
+        color: $ColorTextWhite;
     }
     .type-bike__button {
         background-color: #434343;
@@ -23,4 +24,5 @@
     .header__container-menu {
         background-color: #2F2F2F;
     }
+
 }

@@ -14,20 +14,21 @@
 
 .root__theme_dark {
   background-color: #2F2F2F;
-  color: white;
+  color: #FFFFFF;
 }
 .root__theme_dark a {
-  color: white;
+  color: #FFFFFF;
 }
 .root__theme_dark input {
   background-color: #2F2F2F;
   caret-color: white;
+  color: #FFFFFF;
 }
 .root__theme_dark input::placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 .root__theme_dark button {
-  color: white;
+  color: #FFFFFF;
 }
 .root__theme_dark .type-bike__button {
   background-color: #434343;
@@ -170,10 +171,24 @@
 .header__container-menu {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  background-color: #F4F4F4;
+  min-height: 74px;
+  width: 100%;
+  padding-right: 120px;
 }
 
+@media screen and (max-width: 1280px) {
+  header__container-menu {
+    padding-right: 60px;
+  }
+}
 @media screen and (max-width: 720px) {
   .header__container-menu {
+    padding-right: 0;
     position: absolute;
     top: -100%;
     right: 0;
@@ -673,7 +688,7 @@
   background-color: #EBEBEB;
   cursor: pointer;
   padding: 0;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .type-bike__button:first-of-type {
@@ -686,6 +701,10 @@
     height: 24px;
   }
 }
+.type-bike__button:hover {
+  opacity: 0.6;
+}
+
 .type-bike__container-picture {
   position: relative;
   display: flex;
