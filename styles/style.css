@@ -451,17 +451,16 @@
   }
 }
 .intro__siticky-picture {
-  position: sticky;
-  top: 0;
-  padding: 20px 50px 20px 50px;
-  background-color: #F4F4F4;
+  min-width: 340px;
   border-radius: 20px;
+  max-height: 260px;
+  align-self: center;
 }
 
 @media screen and (max-width: 1280px) {
   .intro__siticky-picture {
-    max-width: 180px;
-    padding: 10px 27px 10px 27px;
+    min-width: 180px;
+    max-height: 140px;
   }
 }
 .intro__title-box {
@@ -499,6 +498,23 @@
   .intro__text-box {
     justify-content: center;
     padding-top: 40px;
+  }
+}
+.intro__siticky-picture-box {
+  position: sticky;
+  top: 0;
+  max-width: 440px;
+  max-height: 300px;
+  border-radius: 20px;
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .intro__siticky-picture-box {
+    max-width: 234px;
+    min-height: 162px;
   }
 }
 .ride {
@@ -899,22 +915,19 @@
   }
 }
 .bicycles__card-picture {
-  max-width: 320px;
+  max-width: 340px;
   max-height: 340px;
-  padding: 20px;
   border-radius: 20px;
-  background-color: #F4F4F4;
 }
 
 @media screen and (max-width: 1280px) {
   .bicycles__card-picture {
     max-width: 254px;
-    padding: 15px;
   }
 }
 @media screen and (max-width: 1024px) {
   .bicycles__card-picture {
-    max-width: 320px;
+    max-width: 305px;
     align-self: center;
   }
 }
@@ -1047,6 +1060,30 @@
   background-color: #151515;
 }
 
+.bycycles__card-picture-box {
+  background-color: #F4F4F4;
+  max-width: 380px;
+  max-height: 450px;
+  border-radius: 20px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+}
+
+@media screen and (max-width: 1280px) {
+  .bycycles__card-picture-box {
+    max-width: 269px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bycycles__card-picture-box {
+    max-width: 320px;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .bycycles__card-picture-box {
+    max-width: 284px;
+  }
+}
 .training {
   display: grid;
   padding-top: 90px;

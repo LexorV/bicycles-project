@@ -1,0 +1,16 @@
+.intro__siticky-picture-box {
+    position: sticky;
+    top: 0;
+    max-width: 440px;
+    max-height: 300px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    display: flex;
+   justify-content: center;
+}
+@media screen and (max-width: $desktMinopeSize) {
+    .intro__siticky-picture-box{
+        max-width: 234px;
+        min-height: 162px;
+    }
+}
