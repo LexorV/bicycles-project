@@ -11,3 +11,8 @@
         align-items: center;
     }
 }
+@media screen and (max-width: $mobileSize) {
+    .footer  {
+        align-items: flex-start;
+        padding-bottom: 25px;
+}}

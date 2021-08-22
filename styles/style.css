@@ -238,7 +238,6 @@
     max-width: 240px;
     font-size: 40px;
     line-height: 45px;
-    padding-right: 160px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -277,7 +276,7 @@
 }
 .title_position_type-bike {
   padding: 0;
-  display: flex-end;
+  align-content: flex-start;
 }
 
 .intro {
@@ -466,11 +465,15 @@
 .intro__title-box {
   grid-area: title;
   display: flex;
+  flex-direction: column;
+  max-height: 120px;
 }
 
 @media screen and (max-width: 1024px) {
   .intro__title-box {
     justify-content: center;
+    padding-bottom: 40px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 460px) {
@@ -492,12 +495,14 @@
 .intro__text-box {
   grid-area: text;
   display: flex;
+  margin-top: -60px;
 }
 
 @media screen and (max-width: 1024px) {
   .intro__text-box {
     justify-content: center;
     padding-top: 40px;
+    margin: 0;
   }
 }
 .intro__siticky-picture-box {
@@ -571,6 +576,7 @@
   }
 }
 .ride__name {
+  font-family: Inter;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
@@ -1087,7 +1093,7 @@
 .training {
   display: grid;
   padding-top: 90px;
-  gap: 160px;
+  gap: 0 160px;
   margin-left: 120px;
   margin-right: 120px;
   padding-bottom: 120px;
@@ -1144,6 +1150,12 @@
   opacity: 0.6;
 }
 
+@media screen and (max-width: 460px) {
+  .training__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .training__links {
   margin-top: 182px;
   display: flex;
@@ -1240,6 +1252,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footer {
+    align-items: flex-start;
+    padding-bottom: 25px;
   }
 }
 .footer__copyright {
