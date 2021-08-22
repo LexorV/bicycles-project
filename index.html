@@ -8,14 +8,13 @@
     <title>Дорожный клуб</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./vendor/splide-2.4.21/dist/css/splide.min.css">
-    <script src="./vendor/splide-2.4.21/dist/js/splide.min.js"></script>
 </head>
 
 <body class="root">
     <header class="header">
-        <button class="header__burg-menu"><img alt="Меню" class="header__menu-icon" src="./images/icon/menu-icon.svg"></button>
+        <button type="button" class="header__burg-menu"><img alt="Меню" class="header__menu-icon" src="./images/icon/menu-icon.svg"></button>
         <div class="header__container-menu">
-            <button class="header__close-btn"><img alt="Закрыть" class="header__close-icon" src="./images/icon/close-icone.svg"></button>
+            <button type="button" class="header__close-btn"><img alt="Закрыть" class="header__close-icon" src="./images/icon/close-icone.svg"></button>
             <nav class="header__menu">
                 <ul class="header__list-links">
                     <li class="header__list"> <a href="#typeBike" class="header__link">
@@ -31,7 +30,7 @@
             </nav>
             <div class="swith-theme swith-theme_hiden_header">
                 <img class="swith-theme__icon-sun" alt="Солнце" src="./images/icon/sun.svg">
-                <button id="swithThemeHeader" class="swith-theme__button"></button>
+                <button type="button" id="swithThemeHeader" class="swith-theme__button"></button>
                 <img class="swith-theme__icon-moon" alt="Луна" src="./images/icon/moon.svg">
             </div>
         </div>
@@ -44,7 +43,7 @@
             <div class="intro__text-box">
                 <div class="intro__text-container">
                     <p class="subtitle">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-                    <button class="intro__detail-button">Подробнее</button>
+                    <button type="button" class="intro__detail-button">Подробнее</button>
                     <div class="intro__container-line">
                         <p class="intro__text-bike">Cannondale Systemsix
                         </p>
@@ -70,7 +69,7 @@
         <section id="typeBike" class="type-bike">
                 <div class="type-bike__slide  type-bike__slide_active">
                     <div class="type-bike__box-title">
-                    <h2 class="title title_position_type-bike"></h2></div>
+                    <h2 class="title title_position_type-bike">Шоссе</h2></div>
                     <div class="type-bike__box-subtitle">
                     <p class="subtitle"></p></div>
                     <div class="type-bike__container-picture">
@@ -78,13 +77,13 @@
                             <div class="type-bike__form-icon">
                                 <img class="type-bike__icon-pulse" alt="Полоса" src="./images/icon/icone-type-bike2.svg">
                             </div>
-                        <img id="typeBikePicture1" src="" class="type-bike__picture type-bike__button_active" alt="">
-                        <img id="typeBikePicture2" src="" class="type-bike__picture" alt="">
+                        <img id="typeBikePicture1" src="./images/type-bike__roud.jpg" class="type-bike__picture" alt="Дорога">
+                        <img id="typeBikePicture2" src="./images/type-bike__roud1.jpg" class="type-bike__picture" alt="Дорога">
                     </div>
                     </div>
                     <div class="type-bike__arrow-container">
-                        <button id="previousSliderBtn" class="type-bike__button"><img alt="Стрелка влево" class="type-bike__arrow" src="./images/icon/previous_arrow.svg"></button>
-                        <button id="nextSliderBtn" class="type-bike__button type-bike__button_active"><img alt="Стрелка вправо" class="type-bike__arrow" src="./images/icon/arrow_next.svg"></button>
+                        <button type="button" id="previousSliderBtn" class="type-bike__button"><img alt="Стрелка влево" class="type-bike__arrow" src="./images/icon/previous_arrow.svg"></button>
+                        <button type="button" id="nextSliderBtn" class="type-bike__button type-bike__button_active"><img alt="Стрелка вправо" class="type-bike__arrow" src="./images/icon/arrow_next.svg"></button>
                     </div>
             </div>
         </section>
@@ -97,24 +96,24 @@
                     <option  class="bicycles__select-list">ТТ</option>
                 </select>
                 <ul class="bicycles__type-lists">
-                    <li class="bicycles__type-list"><button class="bicycles__type-link">Шоссе</button></li>
-                    <li class="bicycles__type-list"><button class="bicycles__type-link">Грэвел</button></li>
-                    <li class="bicycles__type-list"><button class="bicycles__type-link">TT</button></li>
+                    <li class="bicycles__type-list"><button type="button" class="bicycles__type-link">Шоссе</button></li>
+                    <li class="bicycles__type-list"><button type="button" class="bicycles__type-link">Грэвел</button></li>
+                    <li class="bicycles__type-list"><button type="button" class="bicycles__type-link">TT</button></li>
                 </ul>
             </div>
             <div id="bicycleSplide" class="splide">
                 <div class="splide__track">
                     <ul class="bicycles__cards-list splide__list">
                         <li class="bicycles__card splide__slide">
-                            <img class="bicycles__card-picture " src="">
+                            <img class="bicycles__card-picture " alt="Велосипед" src="./images/bike/bike1.jpg">
                             <a href="#" class="bicycles__card-text"></a>
                         </li>
                         <li class="bicycles__card splide__slide">
-                            <img class="bicycles__card-picture" src="">
+                            <img class="bicycles__card-picture" alt="Велосипед" src="./images/bike/bike2.jpg">
                             <a href="#" class="bicycles__card-text"></a>
                         </li>
                         <li class="bicycles__card splide__slide">
-                            <img class="bicycles__card-picture" src="">
+                            <img class="bicycles__card-picture" alt="Велосипед" src="./images/bike/bike3.jpg">
                             <a href="#" class="bicycles__card-text"></a>
                         </li>
                     </ul>
@@ -143,14 +142,15 @@
         <h2 class="footer__title">Подпишитесь на рассылку —</h2>
         <div>
             <input type="email" class="footer__form" placeholder="Ваш e-mail">
-            <button class="footer__btn-inform">ok</button></div>
+            <button type="submit" class="footer__btn-inform">ok</button></div>
         <p class="footer__copyright">&copy;Road Club 2021</p>
         <div class="swith-theme swith-theme_hiden_footer">
             <img class="swith-theme__icon-sun " alt="Солнце" src="./images/icon/sun.svg">
-            <button id="swithThemeFooter" class="swith-theme__button"></button>
+            <button type="button" id="swithThemeFooter" class="swith-theme__button"></button>
             <img class="swith-theme__icon-moon" alt="Луна" src="./images/icon/moon.svg">
         </div>
     </footer>
+    <script src="./vendor/splide-2.4.21/dist/js/splide.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
