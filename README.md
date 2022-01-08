@@ -1,1 +1,1 @@
-# bicycles-project Презентация https://lexorv.github.io/bicycles-project/
+# bicycles-project Презентация: https://lexorv.github.io/bicycles-project/
