@@ -1,0 +1,8 @@
+.bicycles {
+   @include field
+}
+@media screen and (max-width: 1439px) {
+    .bicycles  {
+    margin-right: 10px;
+}
+}

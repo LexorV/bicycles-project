@@ -1,0 +1,8 @@
+.swith-theme__button_active {
+    background: #545454;
+    ;
+}
+
+.swith-theme__button_active::after {
+    left: 21px;
+}

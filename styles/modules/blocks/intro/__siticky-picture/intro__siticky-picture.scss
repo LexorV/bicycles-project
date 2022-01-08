@@ -1,0 +1,15 @@
+.intro__siticky-picture {
+    min-width: 340px;
+    border-radius: 20px;
+    max-height: 260px;
+    align-self: center;
+
+}
+
+@media screen and (max-width: $desktMinopeSize) {
+    .intro__siticky-picture {
+        min-width: 180px;
+        max-height: 140px;
+
+    }
+}

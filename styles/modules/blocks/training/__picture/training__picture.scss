@@ -1,0 +1,31 @@
+        .training__picture {
+            margin-top: 60px;
+            max-width: 580px;
+            max-height: 460px;
+        }
+        
+        @media screen and (max-width: $desktMinopeSize) {
+            .training__picture {
+                max-width: 480px;
+                margin-bottom: 40px;
+            }
+        }
+        @media screen and (max-width:  $tabletSizeB) {
+            .training__picture{
+                max-width: 550px;
+            }
+        }
+
+        @media screen and (max-width: $tabletSize) {
+            .training__picture {
+              max-width: 400px;
+              max-height: 320px;
+              margin-top: 0;
+            }
+        }
+        @media screen and (max-width: $mobileSize) {
+            .training__picture {
+               max-width: 284px;
+               max-height: 225px;
+            }
+        }

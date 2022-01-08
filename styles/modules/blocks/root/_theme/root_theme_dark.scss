@@ -1,0 +1,28 @@
+.root__theme_dark {
+    background-color: #2F2F2F;
+    color: $ColorTextWhite;
+    a {
+        color: $ColorTextWhite;
+    }
+    input {
+        background-color: #2F2F2F;
+        caret-color: white;
+        color: $ColorTextWhite;
+    }
+    input::placeholder {
+        color: $ColorTextWhite;
+    }
+    button {
+        color: $ColorTextWhite;
+    }
+    .type-bike__button {
+        background-color: #434343;
+    }
+    .type-bike__arrow, .header__close-icon, .header__menu-icon {
+        filter: invert(1);
+    }
+    .header__container-menu {
+        background-color: #2F2F2F;
+    }
+
+}

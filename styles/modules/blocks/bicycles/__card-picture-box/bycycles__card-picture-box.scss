@@ -1,0 +1,23 @@
+.bycycles__card-picture-box {
+    background-color: #F4F4F4;
+    max-width: 380px;
+    max-height: 450px;
+    border-radius: 20px;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+}
+@media screen and (max-width: $desktMinopeSize) {
+    .bycycles__card-picture-box{
+        max-width: 269px;
+    }
+}
+@media screen and (max-width: $tabletSizeB) {
+    .bycycles__card-picture-box {
+        max-width: 320px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .bycycles__card-picture-box{
+       max-width: 284px;
+    }
+}

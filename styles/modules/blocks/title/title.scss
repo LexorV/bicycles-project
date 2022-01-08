@@ -1,0 +1,27 @@
+.title {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-family: $fontMain;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 460px;
+}
+@media screen and (max-width: $tabletSize) {
+    .title {
+       max-width: 240px;
+       font-size: 40px;
+       line-height: 45px;
+      // padding-right: 160px;
+    }
+}
+
+@media screen and (max-width: $mobileSize) {
+    .title {
+       max-width: 190px;
+       font-size: 32px;
+       line-height: 40px;
+       padding-right: 0;
+       margin-bottom: 40px;
+    }
+}

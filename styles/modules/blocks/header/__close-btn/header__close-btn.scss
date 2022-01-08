@@ -1,0 +1,22 @@
+.header__close-btn {
+    border: none;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 6;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+}
+
+.header__close-btn:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: $tabletSize) {
+    .header__close-btn {
+        display: block;
+    }
+}

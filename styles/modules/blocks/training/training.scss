@@ -1,0 +1,35 @@
+.training {
+    display: grid;
+    padding-top: 90px;
+    gap: 0 160px;
+    @include field;
+    padding-bottom: 120px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title  picture"
+   "text  picture";
+}
+
+@media screen and (max-width: $desktMinopeSize) {
+    .training {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: $tabletSizeB) {
+    .training {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title "
+        "picture"
+        "text";
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: $tabletSize) {
+    .training {
+       padding-bottom: 0;
+       padding-top: 60px;
+    }
+}

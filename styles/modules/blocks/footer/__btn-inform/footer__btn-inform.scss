@@ -1,0 +1,19 @@
+.footer__btn-inform {
+    position: relative;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    font-family: $fontMain;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: $mobileSize) {
+    .footer__btn-inform {
+       right: 30px;
+       top:0;
+       z-index: 7;
+    }
+}

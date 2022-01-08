@@ -1,0 +1,21 @@
+.ride__picture {
+    @include pictureSizeChange;
+    max-height: 460px;
+  
+}
+@media screen and (max-width: $tabletSizeB) {
+    .ride__picture{
+        margin-bottom: 40px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: $tabletSize) {
+    .ride__picture{
+       max-width: 400px;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .ride__picture  {
+       max-width: 284px;
+    }
+}

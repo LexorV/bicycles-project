@@ -1,0 +1,18 @@
+.bicycles__cards-list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1439px) {
+    .bicycles__cards-list  {
+    gap:20px}
+}
+
+@media screen and (max-width: $desktMinopeSize) {
+    .bicycles__cards-list {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+.bicycles__card-picture {
+    max-width: 340px;
+    max-height: 340px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: $desktMinopeSize) {
+    .bicycles__card-picture {
+        max-width: 254px;
+    }
+}
+@media screen and (max-width: $tabletSizeB) {
+    .bicycles__card-picture {
+        max-width: 305px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: $mobileSize) {
+    .bicycles__card-picture {
+       max-width: 255px;
+    }
+}
