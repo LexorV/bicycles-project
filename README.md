@@ -1,1 +1,7 @@
-# bicycles-project Презентация: https://lexorv.github.io/bicycles-project/
+## Описание:
+Адаптивный лендинг, c элементами JS. Описание типов велосипедов.Используется методология БЭМ.
+## Используемые технологии
+* HTML
+* SCSS
+* JS
+# DEMO: https://lexorv.github.io/bicycles-project/
